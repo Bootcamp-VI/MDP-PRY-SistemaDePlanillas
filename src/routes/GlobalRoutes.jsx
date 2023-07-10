@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import BaseTemplate from "../components/layout/baseTemplate";
-import Login from "../pages/auth/Login";
+import {Login} from "../pages/auth/login/Login";
 
 function GlobalRoutes() {
   return (
