@@ -5,6 +5,17 @@
     font-weight: bold;
     text-align: center;
   }
+  
+  .btn-microsoft{
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 3em;
+    transition: 0.3s ease;
+    background-color: #fff;
+    color: #1E1E2D;
+  }
 
   .btn-login {
     font-weight: bold;
@@ -17,17 +28,16 @@
     color: white;
   }
 
-  .btn-microsoft{
-    width: 100% !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    text-align: center;
-  }
-
-
   .bg-glass{
     border-radius: 15px;
     border-width: 1px;
-    background-color: rgba(7, 6, 6, 0.65);
+    background-color: rgba(7, 6, 6, 0.6);
+    backdrop-filter: blur(9px);
+    opacity: 1;
+  }
+
+  .btn-login:hover {
+    background-color: #3CB9FF!important;
+    color: white;
+    cursor: pointer !important;
   }
