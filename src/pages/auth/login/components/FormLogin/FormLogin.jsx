@@ -11,8 +11,8 @@ export const FormLogin = () => {
   return (
     <form className="form-login">
       <h3 className="form-title mb-4">LOGIN</h3>
-      <div className="form-group mb-4 w-auto">
-          <MicrosoftLogin className="rounded-4" clientId={'f8c7976f-3e93-482d-88a3-62a1133cbbc3'} authCallback={authHandler} />
+      <div className="mb-4 w-100 btn-microsoft">
+          <MicrosoftLogin className="rounded-4 w-80" clientId={'f8c7976f-3e93-482d-88a3-62a1133cbbc3'} authCallback={authHandler} />
       </div>
 
       <div className="form-group mb-4">
