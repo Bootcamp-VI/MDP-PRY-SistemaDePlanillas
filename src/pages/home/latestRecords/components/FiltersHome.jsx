@@ -1,11 +1,9 @@
-import React from "react";
-
 function FiltersHome() {
   return (
-    <div className="container d-flex flex-column flex-sm-row justify-content-end">
-      <div className="row">
-        <div className="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-          <div className="input-group mb-3">
+    <div className=" d-flex flex-column flex-sm-row justify-content-end">
+      <div className="row ">
+        <div className=" ">
+          <div className="input-group mb-3 ms-6 ">
             <input type="text" className="form-control" placeholder="Buscar" />
             <button className="btn btn-outline-secondary" type="button">
               Buscar
@@ -13,9 +11,10 @@ function FiltersHome() {
           </div>
         </div>
       </div>
+
       <div className="row">
-        <div className="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-          <div className="btn-group mb-3">
+        <div className="">
+          <div className="btn-group mb-3 ms-3">
             <button
               className="btn btn-secondary dropdown-toggle"
               type="button"
@@ -40,8 +39,8 @@ function FiltersHome() {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-          <div className="btn-group mb-3">
+        <div className="">
+          <div className="btn-group mb-3 ms-3">
             <button
               className="btn btn-secondary dropdown-toggle"
               type="button"
@@ -49,7 +48,7 @@ function FiltersHome() {
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Columnas a mostrar
+              Columnas
             </button>
             <div className="dropdown-menu">
               <label className="dropdown-item">
@@ -69,7 +68,7 @@ function FiltersHome() {
         </div>
       </div>
       <div className="row">
-        <div className="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+        <div className=" ms-3">
           <button className="btn btn-primary">Exportar a Excel</button>
         </div>
       </div>
