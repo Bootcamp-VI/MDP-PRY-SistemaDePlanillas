@@ -1,9 +1,11 @@
 import { ViewUser } from "./viewUser/main";
 import { EmployeList } from "../../components/data/EmployedList";
+import Card from "../home/grupo3/Card/Card";
 
 function Dashboard() {
   return (
     <div className="container-fluid border rounded m-2 p-2">
+      <Card/>
       <div className="table-responsive">
         <table className="table">
           <thead>
