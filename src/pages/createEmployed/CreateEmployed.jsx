@@ -4,6 +4,7 @@ import { FormDataPerson } from "./FormDataPerson";
 import FormPerfil from "./FormPerfil";
 import { FormDataOtros } from "./FormDataOtros";
 import { FormContact } from "./FormContact";
+import LatestRecords from "../home/latestRecords/LatestRecords";
 
 function CreateEmployed() {
   const [activeButton, setActiveButton] = useState(1);
@@ -15,8 +16,8 @@ function CreateEmployed() {
   return (
     <div className="container-fluid border rounded m-2 p-2">
       <FormPerfil />
-      <div className="container-fluid pt-0">
-        <div className="d-flex flex-column flex-sm-row justify-content-between my-2">
+      <div className="container-fluid px-0">
+        {/* <div className="d-flex flex-column flex-sm-row justify-content-between my-2">
           <button
             className={`btn btn-success btn-md border ${
               activeButton === 1 ? "btn-success" : "btn-light"
@@ -57,7 +58,8 @@ function CreateEmployed() {
             {activeButton === 3 && <FormDataEmpl />}
             {activeButton === 4 && <FormDataOtros />}
           </div>
-        </div>
+        </div> */}
+        <LatestRecords />
       </div>
     </div>
   );

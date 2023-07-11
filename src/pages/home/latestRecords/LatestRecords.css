@@ -1,0 +1,10 @@
+.bg-inline-success{
+    background-color: #C9F7F5 !important;
+    color: #1BC5BD !important;
+    padding: 7px 15px !important;
+}
+.bg-inline-warning{
+    background-color: #FFF4DE !important;
+    color: #FFA800 !important;
+    padding: 7px 10px !important;
+}
