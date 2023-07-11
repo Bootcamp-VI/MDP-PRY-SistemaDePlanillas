@@ -28,14 +28,14 @@ export const LastActivitiesCard = () => {
           </div>
           <div className="container mx-auto">
             <div className="row">
-              <div className="col">
+              <div className="col-3">
                 <p className="header-cardActivities">Hora</p>
               </div>
-              <div className="col">
+              <div className="col-7">
                 <p className='header-cardActivities'>Actividad reciente</p>
               </div>
-              <div className="col">
-                <p className='header-cardActivities-img'>
+              <div className="col-2">
+                <p className='header-cardActivities-img text-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="6" viewBox="0 0 17 6" fill="none">
                   <rect x="11" width="6" height="6" rx="2" fill="#B5B5C3"/>
                   <rect width="6" height="6" rx="2" fill="#B5B5C3" fillOpacity="0.7"/>
@@ -45,7 +45,7 @@ export const LastActivitiesCard = () => {
             </div>
           </div>
 
-          <div className='row mx-1'>
+          <div className='row mx-1 mb-2'>
             <div className="col ">
               <div className='text-hour-activity'>
                 09:00
@@ -60,14 +60,14 @@ export const LastActivitiesCard = () => {
             </div>
 
             <div className="col ">
-              <div className='text-activity mx-1'>
-                Employee added
+              <div className='text-name-activity mx-1'>
+                Empleado Agregado
               </div>
             </div>
 
             <div className="col userimg">
               
-                <img className='img-user-type' src="../../src/assets/icons/blue-user.jpeg" alt="userimg" />              
+                <img className='img-user-type' src="../../src/assets/icons/typeUser/blue-24.png" alt="userimg" />              
               
 
             </div>

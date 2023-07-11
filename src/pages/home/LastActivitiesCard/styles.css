@@ -23,19 +23,27 @@
   line-height: normal;
 }
 
-.text-hour-activity{
+.text-hour-activity {
+
+  font-style: normal;
+  font-family: Poppins;
   font-size: 14px;
-
+  font-weight: 600;
+  color: #293959;
   display: inline-block;
   white-space: nowrap;
 }
 
-.text-activity {
-
-  font-size: 12px;
+.text-name-activity{
+  font-style: normal;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  color: #293959;
   display: inline-block;
   white-space: nowrap;
 }
+
 
 .activity {
   padding: 0px;
@@ -48,7 +56,6 @@
 }
 
 .img-user-type {
-  border-radius: 6px;
+  border-radius: 4px;
   background: #C9F7F5;
-  background-color: #80808F;
 }
