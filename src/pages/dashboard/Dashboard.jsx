@@ -1,8 +1,18 @@
 import { ViewUser } from "./viewUser/main";
 import { EmployeList } from "../../components/data/EmployedList";
+import { LastActivitiesCard } from "../home/LastActivitiesCard/LastActivitiesCard";
 
 function Dashboard() {
   return (
+    <>
+
+    <div className="container-fluid border rounded mx-2 my-4  p-2">
+
+      <LastActivitiesCard/>
+
+    </div>
+
+
     <div className="container-fluid border rounded m-2 p-2">
       <div className="table-responsive">
         <table className="table">
@@ -52,6 +62,8 @@ function Dashboard() {
         </table>
       </div>
     </div>
+    
+    </>
   );
 }
 

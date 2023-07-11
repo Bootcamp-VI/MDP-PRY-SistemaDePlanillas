@@ -1,0 +1,54 @@
+.header-cardActivities {
+  display: inline-block;
+  white-space: nowrap;
+
+  color: #80808F;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;  
+}
+
+.title-cardActivities-img {
+  text-align: center;
+}
+
+.title-lastActivities {
+  color: #243250;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-hour-activity{
+  font-size: 14px;
+
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.text-activity {
+
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.activity {
+  padding: 0px;
+  margin: 0px;
+  text-align: start;
+}
+
+.userimg {
+  /* background-color: #80808F; */
+}
+
+.img-user-type {
+  border-radius: 6px;
+  background: #C9F7F5;
+  background-color: #80808F;
+}
