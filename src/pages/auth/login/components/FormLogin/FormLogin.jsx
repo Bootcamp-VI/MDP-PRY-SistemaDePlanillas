@@ -14,7 +14,7 @@ export const FormLogin = () => {
       <div className="mb-4 w-100">
         <MicrosoftLogin className="rounded-4" clientId={'f8c7976f-3e93-482d-88a3-62a1133cbbc3'} authCallback={authHandler} >
           
-          <button className="btn-microsoft"><i class="bi bi-microsoft"></i> Iniciar Sesión con Microsoft</button>
+          <button className="btn-microsoft"><i className="bi bi-microsoft"></i> Iniciar Sesión con Microsoft</button>
         </MicrosoftLogin>
 
       </div>
