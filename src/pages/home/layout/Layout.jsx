@@ -1,5 +1,6 @@
 import { Header } from "../../../components/header/Header";
 import Sidebar from "../../../components/sidebar/Sidebar";
+import ContentMainRoutes from "../../../routes/ContentMainRoutes";
 
 export const Layout = ({ children }) => {
   return (
@@ -8,6 +9,7 @@ export const Layout = ({ children }) => {
       <div className="flex-grow-1">
         <Header />
         {children}
+        <ContentMainRoutes></ContentMainRoutes>
       </div>
     </div>
   );

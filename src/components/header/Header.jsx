@@ -38,7 +38,7 @@ export const Header = () => {
             </a>
             <ul className="header-option dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
               <li>
-                <a className="dropdown-item" href="#logout">
+                <a className="dropdown-item" href="/auth">
                   <div className="d-flex align-items-center">
                     <FaDoorOpen className="me-2" />
                     Salir
