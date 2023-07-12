@@ -1,17 +1,23 @@
-.header-cardActivities {
-  display: inline-block;
-  white-space: nowrap;
+.last-activities {
 
+  height: 225px;
+}
+
+.card-custom {
+  border-radius: 12px;
+  background: #F3F6F9;
+  max-width: 365px;
+  height: 335px;
+  width: 100%;
+}
+ 
+ .header-cardActivities {
   color: #80808F;
   font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 23px;  
-}
-
-.title-cardActivities-img {
-  text-align: center;
+  line-height: 23px; 
 }
 
 .title-lastActivities {
@@ -30,8 +36,6 @@
   font-size: 14px;
   font-weight: 600;
   color: #293959;
-  display: inline-block;
-  white-space: nowrap;
 }
 
 .text-name-activity{
@@ -44,18 +48,36 @@
   white-space: nowrap;
 }
 
-
-.activity {
-  padding: 0px;
-  margin: 0px;
-  text-align: start;
+.header-cardActivities {
+  color: #80808F;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
 }
 
-.userimg {
-  /* background-color: #80808F; */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .img-user-type {
-  border-radius: 4px;
+
   background: #C9F7F5;
+
+}
+
+.status-activity img{
+  position: relative;
+  left: -4px;
+ }
+
+.lineagris {
+  width: 3px;
+  height: 15px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #E5EAEE;
 }
