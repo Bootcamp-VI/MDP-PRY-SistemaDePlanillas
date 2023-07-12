@@ -28,6 +28,7 @@ function Sidebar() {
               // only apply styles on first level elements of the tree
               if (level === 0) {
                 return {
+                  color: disabled ? "#f5d9ff" : "#fafafa",
                   "&:hover": {
                     backgroundColor: "#3CB9FF",    
                   },
@@ -37,7 +38,6 @@ function Sidebar() {
                 return {
                   color: disabled ? "#f5d9ff" : "#fafafa",
                   backgroundColor: active ? "#3CB9FF" : "#1E1E2D",
-                  
                   "&:hover": {
                     backgroundColor: "#3CB9FF",
                   },
@@ -46,20 +46,20 @@ function Sidebar() {
           }}
         >
           <SubMenu label="Empleados" icon={<FaBuildingUser />}>
-            <MenuItem> ° Crear Empleado </MenuItem>
-            <MenuItem> ° Comprobantes </MenuItem>
-            <MenuItem> ° Quinta </MenuItem>
-            <MenuItem> ° Empleados Ext. </MenuItem>
-            <MenuItem> ° Familiares </MenuItem>
-            <MenuItem> ° Mov. AFP </MenuItem>
-            <MenuItem> ° Vacaciones </MenuItem>
-            <MenuItem> ° Descanso Médico </MenuItem>
-            <MenuItem> ° Establecimiento Interno </MenuItem>
-            <MenuItem> ° Establecimiento Externo </MenuItem>
+            <a href='/base/create_employed'><MenuItem> ° Crear Empleado </MenuItem></a>
+            <a href="#"><MenuItem> ° Comprobantes </MenuItem></a>
+            <a href="#"><MenuItem> ° Quinta </MenuItem></a>
+            <a href="#"><MenuItem> ° Empleados Ext. </MenuItem></a>
+            <a href="#"><MenuItem> ° Familiares </MenuItem></a>
+            <a href="#"><MenuItem> ° Mov. AFP </MenuItem></a>
+            <a href="#"><MenuItem> ° Vacaciones </MenuItem></a>
+            <a href="#"><MenuItem> ° Descanso Médico </MenuItem></a>
+            <a href="#"><MenuItem> ° Establecimiento Interno </MenuItem></a>
+            <a href="#"><MenuItem> ° Establecimiento Externo </MenuItem></a>
           </SubMenu>
-          <MenuItem icon={<BiSolidUser />}>Usuarios</MenuItem>
-          <MenuItem icon={<GiReceiveMoney />}> Pagos </MenuItem>
-          <MenuItem icon={<IoMdSettings />}> Configuración </MenuItem>
+          <a href="/base/dashboard"><MenuItem icon={<BiSolidUser />}>Usuarios</MenuItem></a>
+          <a href="#"><MenuItem icon={<GiReceiveMoney />}> Pagos </MenuItem></a>
+          <a href="#"><MenuItem icon={<IoMdSettings />}> Configuración </MenuItem></a>
         </Menu>
       </SidebarLayout>
     </div>
