@@ -32,3 +32,13 @@
     color: #B5B5C3 !important;
 }
 
+.no-rounded{
+    border: 0 !important;
+}
+
+.custom-search {
+    border: #B5B5C3 !important;
+    border-radius: 10px !important;
+    background-color: #F3F6F9;
+    color: black;
+}

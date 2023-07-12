@@ -1,11 +1,16 @@
 function FiltersHome() {
   return (
-    <div className="d-flex flex-col-reverse flex-column flex-sm-row justify-content-end">
-      <div className="row mx-1 my-md-3 my-1">
+    <div className="d-flex flex-col-reverse flex-column flex-sm-row justify-content-end  bg-white">
+      <div className="row mx-3 my-md-3 my-1 custom-search">
         <div className="col">
-          <div className="input-group input-group-sm ">
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-            <button className="btn btn-outline-secondary" type="button">
+          <div className="input-group input-group-md">
+            <input
+              type="text"
+              className="form-control custom-search"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-md"
+            />
+            <button className="btn btn-outline-secondary custom-search btn-md" type="button">
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
