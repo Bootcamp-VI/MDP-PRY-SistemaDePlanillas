@@ -1,13 +1,13 @@
-import { CardWizard } from "./CardWizard";
+import { SectionCard } from "./SectionCard";
 
-export const SectionWizard = ({ sectionName }) => {
+export const ContentSection = ({ sectionName }) => {
   return (
     <>
       <div className="col-12 col-md-6 px-1">
-        <CardWizard />
+        <SectionCard />
       </div>
       <div className="col-12 col-md-6 px-1">
-        <CardWizard />
+        <SectionCard />
       </div>
     </>
   );

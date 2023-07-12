@@ -1,4 +1,4 @@
-export const NavWizard = () => {
+export const UserActions = () => {
     return (
         <>
             <div className="my-4 px-0 flex text-center">

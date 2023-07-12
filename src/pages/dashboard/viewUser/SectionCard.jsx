@@ -1,4 +1,4 @@
-export const CardWizard = () => {
+export const SectionCard = () => {
   return (
     <>
       <h5>Documentos de Identidad</h5>

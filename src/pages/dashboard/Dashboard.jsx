@@ -1,4 +1,4 @@
-import { ViewUser } from "./ViewUser";
+import { ViewUser } from "./viewUser/main";
 import { EmployeList } from "../../components/data/EmployedList";
 
 function Dashboard() {
