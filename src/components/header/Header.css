@@ -1,0 +1,22 @@
+.header {
+  background-color:rgb(30, 30, 45);
+  color: white;
+  padding: 10px;
+}
+
+.profile-header {
+  color: white;
+}
+
+.header-icon {
+  margin-right: 25px;
+  color: white;
+}
+
+.header-icon:hover{
+  color: #3699FF;
+}
+
+.remove-dropdown-arrow::after {
+  display: none !important;
+}
