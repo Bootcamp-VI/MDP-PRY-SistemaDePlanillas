@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #1E1E2D;
+  color: white;
+}
+
+.profile-header {
+  color: white;
+}
+
+.header-icon {
+  margin-right: 25px;
+  color: white;
+}
+
+.header-icon:hover {
+  color: #3699FF;
+}
+
+.remove-dropdown-arrow::after {
+  display: none !important;
+}
+
+.header-option {
+  background-color: #1E1E2D;
+}
+
+.header-option li a {
+  color: white;
+  font-size: 0.8rem;
+}
