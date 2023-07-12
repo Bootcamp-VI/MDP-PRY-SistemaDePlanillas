@@ -1,3 +1,8 @@
+.last-activities {
+
+  height: 225px;
+}
+
 .card-custom {
   border-radius: 12px;
   background: #F3F6F9;
@@ -14,11 +19,7 @@
   font-weight: 500;
   line-height: 23px; 
 }
-/*
-.title-cardActivities-img {
-  text-align: center;
-}
-*/
+
 .title-lastActivities {
   color: #243250;
   font-family: Poppins;
@@ -27,40 +28,25 @@
   font-weight: 600;
   line-height: normal;
 }
-.text-hour-activity{
-  color: #243250;
-  font-family: Poppins;
-  font-size: 12px;
+
+.text-hour-activity {
+
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.text-activity {
-
-  color: #243250;
   font-family: Poppins;
-  font-size: 12px;
-  font-style: normal;
+  font-size: 14px;
   font-weight: 600;
-  line-height: normal;
+  color: #293959;
 }
 
-/* .activity {
-  padding: 0px;
-  margin: 0px;
-  text-align: start;
+.text-name-activity{
+  font-style: normal;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  color: #293959;
+  display: inline-block;
+  white-space: nowrap;
 }
-
-.userimg { */
-  /* background-color: #80808F; */
-/*}
-
-/* .img-user-type {
-  border-radius: 6px;
-  background: #C9F7F5;
-  background-color: #80808F; 
-} */
 
 .header-cardActivities {
   color: #80808F;
@@ -75,4 +61,23 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.img-user-type {
+
+  background: #C9F7F5;
+
+}
+
+.status-activity img{
+  position: relative;
+  left: -4px;
+ }
+
+.lineagris {
+  width: 3px;
+  height: 15px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #E5EAEE;
 }

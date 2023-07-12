@@ -2,13 +2,24 @@ import { ViewUser } from "./viewUser/main";
 import { EmployeList } from "../../components/data/EmployedList";
 import { LastActivitiesCard } from "../home/LastActivitiesCard/LastActivitiesCard";
 
+import { lastActivities  } from "../../components/data/lastActivities";
+import { useEffect, useState } from "react";
+
 function Dashboard() {
+
+  const [activities, setActivities] = useState([]);
+
+  useEffect(() => {
+    setActivities(lastActivities.data);
+  }, []);
+  
+
   return (
     <>
 
     <div className="container-fluid border rounded mx-2 my-4  p-2">
 
-      <LastActivitiesCard/>
+      <LastActivitiesCard activities={activities}/>
 
     </div>
 
