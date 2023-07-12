@@ -6,10 +6,10 @@ function TdDouble(props) {
   return (
     <td>
       <div className="d-flex flex-column">
-        <p className="m-0">
+        <p className="fc-primary-important m-0">
           <b>{primaryText}</b>
         </p>
-        <p className="text-muted m-0 fs-6">{secondaryText}</p>
+        <p className="fc-secondary-important m-0 fs-6">{secondaryText}</p>
       </div>
     </td>
   );

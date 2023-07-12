@@ -1,28 +1,27 @@
 function FiltersHome() {
   return (
-    <div className=" d-flex flex-column flex-sm-row justify-content-end">
-      <div className="row ">
-        <div className=" ">
-          <div className="input-group mb-3 ms-6 ">
-            <input type="text" className="form-control" placeholder="Buscar" />
+    <div className="d-flex flex-col-reverse flex-column flex-sm-row justify-content-end">
+      <div className="row mx-1 my-md-3 my-1">
+        <div className="col">
+          <div className="input-group input-group-sm ">
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
             <button className="btn btn-outline-secondary" type="button">
-              Buscar
+              <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </div>
         </div>
       </div>
-
-      <div className="row">
-        <div className="">
-          <div className="btn-group mb-3 ms-3">
+      <div className="row mx-1 my-md-3 my-1">
+        <div className="col">
+          <div className="btn-group m-0 p-0">
             <button
-              className="btn btn-secondary dropdown-toggle"
+              className="btn btn-md btn-fill-primary btn-primary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Filtrar por
+              <i className="fa-solid fa-filter mx-2"></i>Filtrar por
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="#">
@@ -38,38 +37,11 @@ function FiltersHome() {
           </div>
         </div>
       </div>
-      <div className="row">
-        <div className="">
-          <div className="btn-group mb-3 ms-3">
-            <button
-              className="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Columnas
-            </button>
-            <div className="dropdown-menu">
-              <label className="dropdown-item">
-                <input type="checkbox" className="form-check-input" />
-                Columna 1
-              </label>
-              <label className="dropdown-item">
-                <input type="checkbox" className="form-check-input" />
-                Columna 2
-              </label>
-              <label className="dropdown-item">
-                <input type="checkbox" className="form-check-input" />
-                Columna 3
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className=" ms-3">
-          <button className="btn btn-primary">Exportar a Excel</button>
+      <div className="row mx-1 my-md-3 my-1">
+        <div className="col">
+          <button className="btn btn-md btn-fill-primary btn-primary d-flex align-items-center">
+            <i className="fa-solid fa-file-export mx-2"></i> Exportar
+          </button>
         </div>
       </div>
     </div>

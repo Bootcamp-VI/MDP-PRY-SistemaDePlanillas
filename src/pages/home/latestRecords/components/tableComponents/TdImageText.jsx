@@ -18,8 +18,8 @@ function TdImageText(props) {
           />
         </div>
         <div className="">
-          <b>{primaryText}</b>
-          <p className="mb-0">{secondaryText}</p>
+          <b className="fc-primary-important">{primaryText}</b>
+          <p className="fc-secondary-important mb-0">{secondaryText}</p>
         </div>
       </div>
     </td>

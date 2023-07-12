@@ -64,6 +64,8 @@ function BaseTemplate() {
           <div className="activity"></div>
         </div>
         <div>
+          <div className="p-5 border rounded">Boxes</div> {/*  //delete this line */}
+          <div className="p-5 border rounded">Boxes</div> {/*  //delete this line */}
           <LatestRecords/> {/*  //delete this line */}
           <ContentMainRoutes />
         </div>

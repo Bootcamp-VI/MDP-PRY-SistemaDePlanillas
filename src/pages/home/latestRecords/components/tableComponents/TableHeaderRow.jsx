@@ -5,7 +5,7 @@ const TableHeaderRow = ({ columnNames }) => {
     <thead>
       <tr className="bg-light">
         {columnNames.map((columnName, index) => (
-          <th key={index}>{columnName}</th>
+          <th className="bg-secondary-important fc-primary-important" key={index}>{columnName}</th>
         ))}
       </tr>
     </thead>

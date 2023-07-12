@@ -4,13 +4,13 @@ function TdDropdownBtn({ buttonName, actions, onSelectAction }) {
   return (
     <td>
       <div className="dropdown">
-        <button className="btn btn-sm btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button className="btn btn-sm btn-dark btn-dark-important dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           {buttonName}
         </button>
-        <ul className="dropdown-menu bg-secondary">
+        <ul className="dropdown-menu bg-secondary btn-dark-important">
           {actions.map((action, index) => (
             <li key={index}>
-              <a className="dropdown-item" href="#" onClick={() => onSelectAction(action)}>
+              <a className="dropdown-item btn-dark-important" href="#" onClick={() => onSelectAction(action)}>
                 {action.label}
               </a>
             </li>

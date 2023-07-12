@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function TdSimple(props) {
   const text = props.text;
   return (
-    <td className="font-weight-bold">
+    <td className="fc-primary-important">
       <b>{text}</b>
     </td>
   );
