@@ -1,6 +1,6 @@
 
 import { FaSearch, FaRegBell, FaCog, FaExchangeAlt, FaDoorOpen } from 'react-icons/fa';
-import '../app/header.css';
+import '../header/Header.css';
 
 export const Header = () => {
   return (
