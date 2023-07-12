@@ -31,7 +31,6 @@ function Dashboard() {
     <>
 
     <div className="container-fluid border rounded mx-2 my-4  p-2">
-      <button className="btn btn-primary" onClick={handleAddActivity}>Add</button>
       <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity}/>
 
     </div>

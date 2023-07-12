@@ -1,50 +1,9 @@
-.last-activities {
-  height: 225px;  
-}
 
-.new-activity {
-  animation: slide-in 1.5s ease;
-}
-
-@keyframes slide-in {
-  0% {
-    opacity: 0;
-    transform: translateY(-35px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-out {
-  0% {
-    transform: translateX(0)
-  }
-  30% {
-    transform: translateX(3px)
-  }
-  60% {
-    transform: translateX(-6px)
-  }
-  100% {
-    transform: translateX(0)
-  }
-}
-
-.activity {
-  margin-bottom: 10px;
-}
-
-.old-activity {
-
-  animation: slide-out 1s ease;
-}
 
 .card-custom {
   border-radius: 12px;
   background: #F3F6F9;
-  max-width: 365px;
+  max-width: 365px;  
   height: 335px;
   width: 100%;
 }
@@ -118,4 +77,61 @@
   flex-shrink: 0;
   border-radius: 8px;
   background: #E5EAEE;
+}
+
+/* Animation list */
+
+.last-activities {
+  height: 225px; 
+}
+
+.new-activity {
+  animation: slide-in 1.5s ease;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0)
+  }
+  30% {
+    transform: translateX(3px)
+  }
+  60% {
+    transform: translateX(-6px)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.activity {
+  /* margin-bottom: 10px; */
+}
+
+.old-activity {
+  animation: slide-out 1s ease;
+}
+
+
+/* TEST btn */
+
+.floatbutton {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 20px;
+  height: 30px;
+  margin: auto;
 }
