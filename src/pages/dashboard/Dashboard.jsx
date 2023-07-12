@@ -12,14 +12,27 @@ function Dashboard() {
   useEffect(() => {
     setActivities(lastActivities.data);
   }, []);
+
+  const handleAddActivity = () => {
+
+    const newActivity = {
+      id: new Date().getTime(),
+      name: 'Actividad nueva',
+      hour: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      typeUser: 'usuario'
+    };
+
+    setActivities([newActivity, ...activities]);
+    
+  }
   
 
   return (
     <>
 
     <div className="container-fluid border rounded mx-2 my-4  p-2">
-
-      <LastActivitiesCard activities={activities}/>
+      <button className="btn btn-primary" onClick={handleAddActivity}>Add</button>
+      <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity}/>
 
     </div>
 

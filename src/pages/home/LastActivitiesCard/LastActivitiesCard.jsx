@@ -1,15 +1,9 @@
-// import { useEffect, useState } from "react";
-// import { lastActivities  } from "../../../components/data/lastActivities";
 import './styles.css'
 
 
 export const LastActivitiesCard = ( { activities } ) => {
 
-  // const [activities, setActivities] = useState([]);
-
-  // useEffect(() => {
-  //   setActivities(lastActivities.data);
-  // }, []);
+  
 
   return (
     <>
@@ -41,10 +35,12 @@ export const LastActivitiesCard = ( { activities } ) => {
               <div className="last-activities overflow-auto" >
 
                 {
-                  activities.map( activity => {
+                  activities.map( (activity, index )=> {
 
                     return (
-                      <div key={activity.id} className="row flex-nowrap align-items-center overflow-auto mt-2">
+                      <div 
+                      key={activity.id} 
+                      className={`row flex-nowrap align-items-center overflow-auto mt-2 activity ${index === 0 ? 'new-activity' : 'old-activity'}`}>
                         <div className="col-2">
                           <div className="text-hour-activity">
                             { activity.hour }
