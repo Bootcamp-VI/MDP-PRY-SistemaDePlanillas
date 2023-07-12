@@ -10,27 +10,32 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { IoMdSettings } from "react-icons/io";
 import HeaderSidebar from "./HeaderSidebar";
 
-import '../sidebar/Sidebar.css';
+import "../sidebar/Sidebar.css";
+import { useState } from "react";
 
 function Sidebar() {
+  const [collapsed, setCollapsed] = useState(false);
+
+  const onHandleClick = () => {
+    setCollapsed(!collapsed);
+  };
   return (
-    <div className="vh-100">
+    <div className="vh-100" style={{minHeight:"200vh"}}>
       <SidebarLayout
+        collapsed={collapsed}
         backgroundColor="#1E1E2D"
-        rootStyles={{ color: "#ffffff", height: "100%", }}
+        rootStyles={{ color: "#ffffff", height: "100%" }}
         className="custom-sidebar"
       >
-        <HeaderSidebar />
+        <HeaderSidebar collapsed={collapsed} onHandleClick={onHandleClick} />
         <Menu
-      
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
               // only apply styles on first level elements of the tree
               if (level === 0) {
                 return {
-                  color: disabled ? "#f5d9ff" : "#fafafa",
                   "&:hover": {
-                    backgroundColor: "#3CB9FF",    
+                    backgroundColor: "#3CB9FF",
                   },
                 };
               }
@@ -38,6 +43,7 @@ function Sidebar() {
                 return {
                   color: disabled ? "#f5d9ff" : "#fafafa",
                   backgroundColor: active ? "#3CB9FF" : "#1E1E2D",
+
                   "&:hover": {
                     backgroundColor: "#3CB9FF",
                   },
@@ -45,7 +51,7 @@ function Sidebar() {
             },
           }}
         >
-          <SubMenu label="Empleados" icon={<FaBuildingUser />}>
+          <SubMenu label="Empleados" icon={<FaBuildingUser size={25} />}>
             <a href='/base/create_employed'><MenuItem> ° Crear Empleado </MenuItem></a>
             <a href="#"><MenuItem> ° Comprobantes </MenuItem></a>
             <a href="#"><MenuItem> ° Quinta </MenuItem></a>
@@ -57,9 +63,9 @@ function Sidebar() {
             <a href="#"><MenuItem> ° Establecimiento Interno </MenuItem></a>
             <a href="#"><MenuItem> ° Establecimiento Externo </MenuItem></a>
           </SubMenu>
-          <a href="/base/dashboard"><MenuItem icon={<BiSolidUser />}>Usuarios</MenuItem></a>
-          <a href="#"><MenuItem icon={<GiReceiveMoney />}> Pagos </MenuItem></a>
-          <a href="#"><MenuItem icon={<IoMdSettings />}> Configuración </MenuItem></a>
+          <a href="/base/dashboard"><MenuItem icon={<BiSolidUser size={25}/>}>Usuarios</MenuItem></a>
+          <a href="#"><MenuItem icon={<GiReceiveMoney size={25}/>}> Pagos </MenuItem></a>
+          <a href="#"><MenuItem icon={<IoMdSettings size={25}/>}> Configuración </MenuItem></a>
         </Menu>
       </SidebarLayout>
     </div>
