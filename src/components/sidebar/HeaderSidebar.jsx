@@ -4,8 +4,7 @@ function HeaderSidebar() {
   return (
     <div
       className="text-center"
-      style={{ marginBottom: "24px", marginTop: "16px" }}
-    >
+      style={{ marginBottom: "24px", marginTop: "16px" }}>
       <img src={logo} alt="Logo MDP" />
     </div>
   );

@@ -4,7 +4,7 @@ import '../header/Header.css';
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <div className="ms-auto d-flex align-items-center">
           <a href="#" className="header-icon">
@@ -36,7 +36,7 @@ export const Header = () => {
                 height="40"
               />
             </a>
-            <ul className="dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
+            <ul className="header-option dropdown-menu dropdown-menu-end mt-3" aria-labelledby="userDropdown">
               <li>
                 <a className="dropdown-item" href="#logout">
                   <div className="d-flex align-items-center">

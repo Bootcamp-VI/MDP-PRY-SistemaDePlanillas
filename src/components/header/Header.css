@@ -1,7 +1,6 @@
-.header {
-  background-color:rgb(30, 30, 45);
+.navbar {
+  background-color: #1E1E2D;
   color: white;
-  padding: 10px;
 }
 
 .profile-header {
@@ -13,10 +12,19 @@
   color: white;
 }
 
-.header-icon:hover{
+.header-icon:hover {
   color: #3699FF;
 }
 
 .remove-dropdown-arrow::after {
   display: none !important;
+}
+
+.header-option {
+  background-color: #1E1E2D;
+}
+
+.header-option li a {
+  color: white;
+  font-size: 0.8rem;
 }

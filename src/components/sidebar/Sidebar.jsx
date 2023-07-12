@@ -10,22 +10,26 @@ import { GiReceiveMoney } from "react-icons/gi";
 import { IoMdSettings } from "react-icons/io";
 import HeaderSidebar from "./HeaderSidebar";
 
+import '../sidebar/Sidebar.css';
+
 function Sidebar() {
   return (
     <div className="vh-100">
       <SidebarLayout
         backgroundColor="#1E1E2D"
-        rootStyles={{ color: "#ffffff", height: "100%" }}
+        rootStyles={{ color: "#ffffff", height: "100%", }}
+        className="custom-sidebar"
       >
         <HeaderSidebar />
         <Menu
+      
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
               // only apply styles on first level elements of the tree
               if (level === 0) {
                 return {
                   "&:hover": {
-                    backgroundColor: "#3CB9FF",
+                    backgroundColor: "#3CB9FF",    
                   },
                 };
               }
@@ -33,6 +37,7 @@ function Sidebar() {
                 return {
                   color: disabled ? "#f5d9ff" : "#fafafa",
                   backgroundColor: active ? "#3CB9FF" : "#1E1E2D",
+                  
                   "&:hover": {
                     backgroundColor: "#3CB9FF",
                   },
@@ -52,7 +57,7 @@ function Sidebar() {
             <MenuItem> ° Establecimiento Interno </MenuItem>
             <MenuItem> ° Establecimiento Externo </MenuItem>
           </SubMenu>
-          <SubMenu label="Usuarios" icon={<BiSolidUser />}></SubMenu>
+          <MenuItem icon={<BiSolidUser />}>Usuarios</MenuItem>
           <MenuItem icon={<GiReceiveMoney />}> Pagos </MenuItem>
           <MenuItem icon={<IoMdSettings />}> Configuración </MenuItem>
         </Menu>
