@@ -12,6 +12,7 @@ import HeaderSidebar from "./HeaderSidebar";
 
 import "../sidebar/Sidebar.css";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);
@@ -52,20 +53,20 @@ function Sidebar() {
           }}
         >
           <SubMenu label="Empleados" icon={<FaBuildingUser size={25} />}>
-            <a href='/base/create_employed'><MenuItem> ° Crear Empleado </MenuItem></a>
-            <a href="#"><MenuItem> ° Comprobantes </MenuItem></a>
-            <a href="#"><MenuItem> ° Quinta </MenuItem></a>
-            <a href="#"><MenuItem> ° Empleados Ext. </MenuItem></a>
-            <a href="#"><MenuItem> ° Familiares </MenuItem></a>
-            <a href="#"><MenuItem> ° Mov. AFP </MenuItem></a>
-            <a href="#"><MenuItem> ° Vacaciones </MenuItem></a>
-            <a href="#"><MenuItem> ° Descanso Médico </MenuItem></a>
-            <a href="#"><MenuItem> ° Establecimiento Interno </MenuItem></a>
-            <a href="#"><MenuItem> ° Establecimiento Externo </MenuItem></a>
+            <NavLink to='/base/create_employed'><MenuItem> ° Crear Empleado </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Comprobantes </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Quinta </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Empleados Ext. </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Familiares </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Mov. AFP </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Vacaciones </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Descanso Médico </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Establecimiento Interno </MenuItem></NavLink>
+            <NavLink to="#"><MenuItem> ° Establecimiento Externo </MenuItem></NavLink>
           </SubMenu>
-          <a href="/base/dashboard"><MenuItem icon={<BiSolidUser size={25}/>}>Usuarios</MenuItem></a>
-          <a href="#"><MenuItem icon={<GiReceiveMoney size={25}/>}> Pagos </MenuItem></a>
-          <a href="#"><MenuItem icon={<IoMdSettings size={25}/>}> Configuración </MenuItem></a>
+          <NavLink to="/base/dashboard"><MenuItem icon={<BiSolidUser size={25}/>}>Usuarios</MenuItem></NavLink>
+          <NavLink to="#"><MenuItem icon={<GiReceiveMoney size={25}/>}> Pagos </MenuItem></NavLink>
+          <NavLink to="#"><MenuItem icon={<IoMdSettings size={25}/>}> Configuración </MenuItem></NavLink>
         </Menu>
       </SidebarLayout>
     </div>
