@@ -1,18 +1,18 @@
-import {
-  Sidebar as SidebarLayout,
-  Menu,
-  MenuItem,
-  SubMenu,
-} from "react-pro-sidebar";
-import { FaBuildingUser } from "react-icons/fa6";
 import { BiSolidUser } from "react-icons/bi";
+import { FaBuildingUser } from "react-icons/fa6";
 import { GiReceiveMoney } from "react-icons/gi";
 import { IoMdSettings } from "react-icons/io";
+import {
+  Menu,
+  MenuItem,
+  Sidebar as SidebarLayout,
+  SubMenu,
+} from "react-pro-sidebar";
 import HeaderSidebar from "./HeaderSidebar";
 
-import "../sidebar/Sidebar.css";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../sidebar/Sidebar.css";
 
 function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);

@@ -4,7 +4,7 @@ import ContentMainRoutes from "../../../routes/ContentMainRoutes";
 
 export const Layout = ({ children }) => {
   return (
-    <div className="d-flex">
+    <div className="d-flex min-vh-100">
       <Sidebar />
       <div className="flex-grow-1">
         <Header />
