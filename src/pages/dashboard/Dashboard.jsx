@@ -1,9 +1,42 @@
 import { ViewUser } from "./viewUser/main";
 import { EmployeList } from "../../components/data/EmployedList";
 import Card from "../home/grupo3/Card/Card";
+import { LastActivitiesCard } from "../home/LastActivitiesCard/LastActivitiesCard";
+
+import { lastActivities  } from "../../components/data/lastActivities";
+import { useEffect, useState } from "react";
 
 function Dashboard() {
+
+  const [activities, setActivities] = useState([]);
+
+  useEffect(() => {
+    setActivities(lastActivities.data);
+  }, []);
+
+  const handleAddActivity = () => {
+
+    const newActivity = {
+      id: new Date().getTime(),
+      name: 'Actividad nueva',
+      hour: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      typeUser: 'usuario'
+    };
+
+    setActivities([newActivity, ...activities]);
+    
+  }
+  
+
   return (
+    <>
+
+    <div className="container-fluid border rounded mx-2 my-4  p-2">
+      <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity}/>
+
+    </div>
+
+
     <div className="container-fluid border rounded m-2 p-2">
       <Card/>
       <div className="table-responsive">
@@ -54,6 +87,8 @@ function Dashboard() {
         </table>
       </div>
     </div>
+    
+    </>
   );
 }
 
