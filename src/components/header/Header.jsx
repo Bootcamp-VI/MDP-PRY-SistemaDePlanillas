@@ -1,12 +1,31 @@
-
+import { FiChevronsLeft, FiChevronsRight } from "react-icons/fi";
 import { FaSearch, FaRegBell, FaCog, FaExchangeAlt, FaDoorOpen } from 'react-icons/fa';
 import '../header/Header.css';
 
-export const Header = () => {
+import logo from "../../assets/images/logo_top_header_shadow.png";
+
+export const Header = ({ handleToggleSidebar, toggled }) => {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top">
+    <nav style={{zIndex:"999"}} className="navbar navbar-expand-lg">
       <div className="container-fluid">
+        <div className="d-flex align-items-start">
+          <div className="d-flex align-items-center" style={{ margin: "8px" }}>
+            <img src={logo} alt="Logo MDP" className="img-fluid px-2 d-none d-lg-block" width={120} height={70} />
+            {
+              toggled ? (
+                <span onClick={() => handleToggleSidebar()}>
+                  <FiChevronsLeft color="#3CB9FF" size={25} />
+                </span>)
+                :
+                (<span onClick={() => handleToggleSidebar()}>
+                  <FiChevronsRight color="#3CB9FF" size={25} />
+                </span>)
+            }
+
+          </div>
+        </div>
         <div className="ms-auto d-flex align-items-center">
+
           <a href="#" className="header-icon">
             <FaSearch />
           </a>

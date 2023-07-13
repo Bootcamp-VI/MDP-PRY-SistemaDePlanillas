@@ -1,30 +1,30 @@
 import { BiSolidUser } from "react-icons/bi";
-import { FaBuildingUser } from "react-icons/fa6";
+import { FaBuildingUser,FaHouse } from "react-icons/fa6";
 import { GiReceiveMoney } from "react-icons/gi";
 import { IoMdSettings } from "react-icons/io";
+
 import {
   Menu,
   MenuItem,
   Sidebar as SidebarLayout,
   SubMenu,
 } from "react-pro-sidebar";
-import HeaderSidebar from "./HeaderSidebar";
 
 import { Link } from "react-router-dom";
 import "../sidebar/Sidebar.css";
 
 function Sidebar({ toggled, handleToggleSidebar }) {
   return (
-    <div className="fixed-top fixed-bottom">
+    <div>
       <SidebarLayout
         backgroundColor="#1E1E2D"
         rootStyles={{ color: "#ffffff", height: "100%" }}
         className="custom-sidebar"
         onBackdropClick={() => handleToggleSidebar(false)}
         toggled={toggled}
-        breakPoint="always"
+        breakPoint="all"
       >
-        <HeaderSidebar handleToggleSidebar={handleToggleSidebar} />
+        <div style={{ marginTop: "58px" }}></div>
         <Menu
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
@@ -48,6 +48,12 @@ function Sidebar({ toggled, handleToggleSidebar }) {
             },
           }}
         >
+          <MenuItem
+            component={<Link to="/base/dashboard" />}
+            icon={<FaHouse size={25} />}
+          >
+            Inicio
+          </MenuItem>
           <SubMenu label="Empleados" icon={<FaBuildingUser size={25} />}>
             <MenuItem component={<Link to="/base/create_employed" />}>
               {" "}

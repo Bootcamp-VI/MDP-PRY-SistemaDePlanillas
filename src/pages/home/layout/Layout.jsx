@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Header } from "../../../components/header/Header";
 import Sidebar from "../../../components/sidebar/Sidebar";
-import ContentMainRoutes from "../../../routes/ContentMainRoutes";
+
 
 export const Layout = ({ children }) => {
   const [toggled, setToggled] = useState(false);
@@ -11,12 +11,12 @@ export const Layout = ({ children }) => {
   return (
     <div>
       <Header
-        setToggled={setToggled}
+        toggled={toggled}
         handleToggleSidebar={handleToggleSidebar}
       />
       <Sidebar toggled={toggled} handleToggleSidebar={handleToggleSidebar} />
-      <div style={{ margin: "56px" }}>{children}</div>
-      <ContentMainRoutes></ContentMainRoutes>
+      <div style={{ height:"600px",overflow:"auto", margin: "10px" }}>{children}</div>
+      
     </div>
   );
 };
