@@ -79,7 +79,7 @@ function TableEmployedHome() {
       <span className="text-body-tertiary px-3">
         Mostrando {currentItems.length} registros de {EmployeList.length} 
       </span>
-      <div className="pagination-important justify-content-end">
+      <div className="pagination-important">
         <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn btn-pagination-important-active btn-border mx-1">
           <i className="fa-solid fa-chevron-left"></i>
         </button>

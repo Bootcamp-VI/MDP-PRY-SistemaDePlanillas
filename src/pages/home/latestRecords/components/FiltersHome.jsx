@@ -9,6 +9,7 @@ function FiltersHome() {
               className="form-control custom-search"
               aria-label="Sizing example input"
               aria-describedby="inputGroup-sizing-md"
+              placeholder="Buscar Empleado"
             />
             <button className="btn btn-outline-secondary custom-search btn-md" type="button">
               <i className="fa-solid fa-magnifying-glass"></i>
@@ -30,13 +31,13 @@ function FiltersHome() {
             </button>
             <div className="dropdown-menu">
               <a className="dropdown-item" href="#">
-                Campo 1
+                Código
               </a>
               <a className="dropdown-item" href="#">
-                Campo 2
+                Empleado
               </a>
               <a className="dropdown-item" href="#">
-                Campo 3
+                Documento
               </a>
             </div>
           </div>
