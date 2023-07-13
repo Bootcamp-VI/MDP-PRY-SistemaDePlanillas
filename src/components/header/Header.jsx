@@ -4,7 +4,7 @@ import '../header/Header.css';
 
 export const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg fixed-top">
       <div className="container-fluid">
         <div className="ms-auto d-flex align-items-center">
           <a href="#" className="header-icon">

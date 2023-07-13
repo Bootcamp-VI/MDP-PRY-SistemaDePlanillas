@@ -10,25 +10,21 @@ import {
 } from "react-pro-sidebar";
 import HeaderSidebar from "./HeaderSidebar";
 
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../sidebar/Sidebar.css";
 
-function Sidebar() {
-  const [collapsed, setCollapsed] = useState(false);
-
-  const onHandleClick = () => {
-    setCollapsed(!collapsed);
-  };
+function Sidebar({ toggled, handleToggleSidebar }) {
   return (
-    <div className={{height:"inherit"}}>
+    <div className="fixed-top fixed-bottom">
       <SidebarLayout
-        collapsed={collapsed}
         backgroundColor="#1E1E2D"
         rootStyles={{ color: "#ffffff", height: "100%" }}
         className="custom-sidebar"
+        onBackdropClick={() => handleToggleSidebar(false)}
+        toggled={toggled}
+        breakPoint="always"
       >
-        <HeaderSidebar collapsed={collapsed} onHandleClick={onHandleClick} />
+        <HeaderSidebar handleToggleSidebar={handleToggleSidebar} />
         <Menu
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
@@ -53,20 +49,55 @@ function Sidebar() {
           }}
         >
           <SubMenu label="Empleados" icon={<FaBuildingUser size={25} />}>
-            <MenuItem component={<Link to="/base/create_employed" />}> ° Crear Empleado </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Comprobantes </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Quinta </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Empleados Ext. </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Familiares </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Mov. AFP </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Vacaciones </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Descanso Médico </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Establecimiento Interno </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}> ° Establecimiento Externo </MenuItem>
+            <MenuItem component={<Link to="/base/create_employed" />}>
+              {" "}
+              ° Crear Empleado{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Comprobantes{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Quinta{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Empleados Ext.{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Familiares{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Mov. AFP{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Vacaciones{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Descanso Médico{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Establecimiento Interno{" "}
+            </MenuItem>
+            <MenuItem component={<Link to="/documentation" />}>
+              {" "}
+              ° Establecimiento Externo{" "}
+            </MenuItem>
           </SubMenu>
-          <MenuItem component={<Link to="/base/dashboard" />} icon={<BiSolidUser size={25}/>}>Usuarios</MenuItem>
-          <MenuItem icon={<GiReceiveMoney size={25}/>}> Pagos </MenuItem>
-          <MenuItem icon={<IoMdSettings size={25}/>}> Configuración </MenuItem>
+          <MenuItem
+            component={<Link to="/base/dashboard" />}
+            icon={<BiSolidUser size={25} />}
+          >
+            Usuarios
+          </MenuItem>
+          <MenuItem icon={<GiReceiveMoney size={25} />}> Pagos </MenuItem>
+          <MenuItem icon={<IoMdSettings size={25} />}> Configuración </MenuItem>
         </Menu>
       </SidebarLayout>
     </div>
