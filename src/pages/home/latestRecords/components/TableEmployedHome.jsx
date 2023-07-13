@@ -76,13 +76,16 @@ function TableEmployedHome() {
             ))}
           </tbody>
         </table>
-        <div className="mx-3 row">
+
+      </div>
+
+      <div className="mx-3 row my-3">
           <div className="col-8">
             <span className="text-body-tertiary px-3">
               Mostrando {currentItems.length} registros de {EmployeList.length}
             </span>
           </div>
-          <div className="col-4">
+          <div className="col-md-4 col-sm-7">
             <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn  btn-border mx-1">
               <i className="fa-solid fa-chevron-left"></i>
             </button>
@@ -102,7 +105,6 @@ function TableEmployedHome() {
             </button>
           </div>
         </div>
-      </div>
     </div>
   );
 }
