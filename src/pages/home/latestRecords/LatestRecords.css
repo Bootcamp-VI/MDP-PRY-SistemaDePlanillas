@@ -54,3 +54,7 @@
 .btn-border {
   border-radius: 0 !important;
 }
+
+.m-left-4 {
+  margin-left: 1rem;
+}

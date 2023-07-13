@@ -2,7 +2,6 @@ import "./baseTemplate.css";
 import { useState } from "react";
 import { ItemsMenuData } from "../data/ItemsMenuData";
 import ContentMainRoutes from "../../routes/ContentMainRoutes";
-import LatestRecords from "../../pages/home/latestRecords/LatestRecords"; //delete this line
 
 function BaseTemplate() {
   const [sidebar, setSidebar] = useState(true);
@@ -64,9 +63,6 @@ function BaseTemplate() {
           <div className="activity"></div>
         </div>
         <div>
-          <div className="p-5 border rounded">Boxes</div> {/*  //delete this line */}
-          <div className="p-5 border rounded">Boxes</div> {/*  //delete this line */}
-          <LatestRecords/> {/*  //delete this line */}
           <ContentMainRoutes />
         </div>
       </section>

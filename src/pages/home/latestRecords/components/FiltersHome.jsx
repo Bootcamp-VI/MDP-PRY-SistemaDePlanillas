@@ -2,7 +2,7 @@ function FiltersHome() {
   return (
 
       <div className="row my-3">
-        <div className="col-lg-5 col-md-12 mb-lg-0">
+        <div className="col-lg-4 col-md-12 mb-lg-0">
           <div className="px-4 py-1">
             <h5 className="mb-0 pt-1 fc-primary-important">Últimos Registros de empleados</h5>
           </div>
@@ -23,8 +23,8 @@ function FiltersHome() {
             </div>
           </div>
         </div>
-        <div className="col-lg-2 col-md-6 mb-md-0">
-          <div className="px-3 py-1">
+        <div className="col-lg-2 col-md-6 m-left-4 mb-md-0">
+          <div className="px-0 py-1">
             <div className="btn-group">
               <button
                 className="btn btn-md btn-fill-primary btn-primary dropdown-toggle"
@@ -49,8 +49,8 @@ function FiltersHome() {
             </div>
           </div>
         </div>
-        <div className="col-lg-2 col-md-6">
-          <div className="px-3 py-1">
+        <div className="col-lg-2 col-md-6 m-left-4 d-flex ">
+          <div className="px-0 py-1">
             <button className="btn btn-md btn-fill-primary btn-primary d-flex align-items-center">
               <i className="fa-solid fa-file-export mx-2"></i> Exportar
             </button>
