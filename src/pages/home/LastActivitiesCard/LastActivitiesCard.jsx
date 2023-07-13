@@ -8,7 +8,7 @@ export const LastActivitiesCard = ( { activities, handleAddActivity } ) => {
   return (
     <>
 
-        <div className="container p-2 card-custom mb-2">
+        <div className="card p-2 card-custom mb-2">
           <div className="container position-relative mt-3">
             <h5 className="title-lastActivities">
               Actividades Recientes

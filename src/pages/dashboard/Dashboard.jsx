@@ -31,14 +31,15 @@ function Dashboard() {
   return (
     <>
 
-    <div className="container-fluid border rounded mx-2 my-4  p-2">
+    <div className="container d-flex flex-wrap justify-content-around border rounded mx-2 my-4  p-2">
+      <Card typeEmployee="empleados" totalEmployees={100} nameCompany="MDP"/>
+      <Card typeEmployee="usuarios" totalEmployees={20} nameCompany="MDP"/>
       <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity}/>
 
     </div>
 
 
-    <div className="container-fluid border rounded m-2 p-2">
-      <Card/>
+    <div className="container-fluid border rounded m-2 p-2">      
       <div className="table-responsive">
         <table className="table">
           <thead>

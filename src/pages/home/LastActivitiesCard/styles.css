@@ -3,9 +3,9 @@
 .card-custom {
   border-radius: 12px;
   background: #F3F6F9;
-  max-width: 365px;  
+  min-width: 365px;  
   height: 335px;
-  width: 100%;
+  /* width: 100%; */
 }
  
  .header-cardActivities {
