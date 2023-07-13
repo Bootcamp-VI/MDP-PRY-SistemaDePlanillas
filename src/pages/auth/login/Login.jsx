@@ -14,7 +14,7 @@ export const Login = () => {
                     </div>
 
                     <div className="col-lg-4 mb-5 mb-lg-0 position-relative">
-                        <div className="bg-glass card p-4">
+                        <div className="bg-glass-custom-login card p-4">
                             <FormLogin />
                         </div>
                     </div>
