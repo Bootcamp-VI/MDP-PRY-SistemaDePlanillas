@@ -5,7 +5,7 @@ import "./Card.css";
 function Card({ typeEmployee, totalEmployees, nameCompany }) {
 
   return (
-    <div className="card" style={{ minWidth: "365px", height: "335px" }}>
+    <div className="card card-data" style={{ minWidth: "365px", height: "335px" }}>
       <div className="card-body background-card d-flex flex-column justify-content-between">
         <div className="header d-flex justify-content-between align-items-center">
           <span className="text-white">{ typeEmployee }</span>

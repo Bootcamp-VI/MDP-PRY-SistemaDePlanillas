@@ -31,7 +31,7 @@ function Dashboard() {
   return (
     <>
 
-    <div className="container d-flex flex-wrap justify-content-around border rounded mx-2 my-4  p-2">
+    <div className="container-activities d-flex flex-wrap justify-content-around align-items-center border rounded mx-2 my-4  p-2">
       <Card typeEmployee="empleados" totalEmployees={100} nameCompany="MDP"/>
       <Card typeEmployee="usuarios" totalEmployees={20} nameCompany="MDP"/>
       <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity}/>
