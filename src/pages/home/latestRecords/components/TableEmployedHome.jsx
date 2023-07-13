@@ -1,4 +1,4 @@
-import{ useState } from 'react';
+import { useState } from 'react';
 
 import TdSimple from "./tableComponents/TdSimple";
 import TdDouble from "./tableComponents/TdDouble";
@@ -76,10 +76,10 @@ function TableEmployedHome() {
           ))}
         </tbody>
       </table>
-      <div className="pagination-important">
-        <button  onClick={prevPage} disabled={currentPage === 1} type="button" className="btn btn-primary btn-pagination-important-active
-         btn-border mx-1">
-          Anterior
+
+      <div className="pagination-important justify-content-end">
+        <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn btn-pagination-important-active btn-border mx-1">
+          <i className="fa-solid fa-chevron-left"></i>
         </button>
         {Array.from({ length: totalPages }, (_, index) => index + 1).map(
           (page) => (
@@ -93,8 +93,8 @@ function TableEmployedHome() {
             </button>
           )
         )}
-        <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn btn-primary btn-pagination-important btn-border mx-1">
-          Siguiente
+        <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn btn-pagination-important-active btn-border mx-1">
+          <i className="fa-solid fa-chevron-right"></i>
         </button>
       </div>
     </div>
