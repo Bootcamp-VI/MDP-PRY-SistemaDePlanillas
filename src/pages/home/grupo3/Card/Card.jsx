@@ -1,5 +1,6 @@
 import { FaBuildingUser, FaUser } from "react-icons/fa6";
 import background from "../Card/Top.svg";
+import "./Card.css";
 
 function Card() {
   const svgBackgroundStyles = {
@@ -10,7 +11,7 @@ function Card() {
 
   return (
     <div className="card" style={{ minWidth: "365px", height: "335px" }}>
-      <div className="card-body bg-danger d-flex flex-column justify-content-between">
+      <div className="card-body background-card d-flex flex-column justify-content-between">
         <div className="header d-flex justify-content-between align-items-center">
           <span className="text-white">Empleados</span>
           <div className="dropdown">
