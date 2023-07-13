@@ -1,0 +1,8 @@
+.background-card {
+  position: relative;
+  /* height: 100vh;*/
+  /* width:365;  */
+  background-image: url('./Top.svg');
+   /* background-size: cover; */
+  background-repeat: no-repeat; 
+}

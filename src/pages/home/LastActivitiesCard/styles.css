@@ -1,0 +1,184 @@
+
+
+.card-custom {
+  border-radius: 12px;
+  background: #F3F6F9;
+  width: 365px;  
+  height: 335px;
+  margin-top: 30px;
+    
+}
+
+.card-mini-act {
+  display: none;
+  margin-top: 20px;
+}
+.container-activities {
+  height: 975px;
+}
+
+
+@media (max-width: 870px) {
+
+  .container-activities {
+    height: auto;
+    background-color: #293959;
+  }
+
+  .card-data {
+    margin-top: 30px;
+  }
+
+  .card-custom {
+    display: none;
+  }  
+
+  .card-mini-act {
+    display: block;
+  }
+  
+}
+
+@media (min-width: 870px) and (max-width: 1520px) {
+
+  .container-activities {
+    height: 515px;
+    background-color: #C9F7F5;
+  }
+
+  .card-custom {
+    display: none;
+  }  
+
+  .card-mini-act {
+    display: block;
+  }
+  
+}
+
+@media (min-width: 1520px) {
+  .container-activities {
+    height: 415px;
+    background-color: #09827c;
+  }
+
+}
+
+
+
+ 
+ .header-cardActivities {
+  color: #80808F;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px; 
+}
+
+.title-lastActivities {
+  color: #243250;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-hour-activity {
+
+  font-style: normal;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: #293959;
+}
+
+.text-name-activity{
+  font-style: normal;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 600;
+  color: #293959;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.header-cardActivities {
+  color: #80808F;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.img-user-type {
+
+  background: #C9F7F5;
+
+}
+
+.status-activity img{
+  position: relative;
+  left: -4px;
+ }
+
+.lineagris {
+  width: 3px;
+  height: 15px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #E5EAEE;
+}
+
+/* Animation list */
+
+.last-activities {
+  height: 225px; 
+}
+
+.new-activity {
+  animation: slide-in 1.5s ease;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.old-activity {
+ 
+}
+
+/* TEST btn */
+.floatbutton {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 20px;
+  height: 30px;
+  margin: auto;
+}
+.floatbutton1 {
+  top: 0;
+  right: 20px;
+  position: absolute;
+  background-color: cornflowerblue;
+  width: 20px;
+  height: 30px;
+  margin: auto;
+}
