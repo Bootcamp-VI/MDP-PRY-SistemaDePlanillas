@@ -21,7 +21,7 @@ function Sidebar() {
     setCollapsed(!collapsed);
   };
   return (
-    <div>
+    <div className={{height:"inherit"}}>
       <SidebarLayout
         collapsed={collapsed}
         backgroundColor="#1E1E2D"
