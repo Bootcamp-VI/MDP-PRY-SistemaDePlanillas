@@ -42,3 +42,24 @@
     background-color: #F3F6F9;
     color: black;
 }
+
+.pagination-important{
+
+    float: right;
+}
+.btn-pagination-important{
+background-color:  #009EF7 !important ;
+ 
+}
+.btn-numbers-important{
+    background-color:  #1E1E2D !important ;
+}
+ 
+
+
+
+
+.btn-border{
+    border-radius: 0  !important; 
+   
+}

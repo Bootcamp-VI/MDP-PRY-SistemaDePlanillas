@@ -76,8 +76,9 @@ function TableEmployedHome() {
           ))}
         </tbody>
       </table>
-      <div>
-        <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn btn-primary">
+      <div className="pagination-important">
+        <button  onClick={prevPage} disabled={currentPage === 1} type="button" className="btn btn-primary btn-pagination-important-active
+         btn-border mx-1">
           Anterior
         </button>
         {Array.from({ length: totalPages }, (_, index) => index + 1).map(
@@ -86,13 +87,13 @@ function TableEmployedHome() {
               key={page}
               onClick={() => goToPage(page)}
               disabled={currentPage === page}
-              type="button" className="btn btn-primary"
+              type="button" className="btn btn-primary btn-numbers-important btn-border mx-1"
             >
               {page}
             </button>
           )
         )}
-        <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn btn-primary">
+        <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn btn-primary btn-pagination-important btn-border mx-1">
           Siguiente
         </button>
       </div>
