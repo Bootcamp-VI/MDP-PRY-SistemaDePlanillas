@@ -5,7 +5,7 @@ import TableEmployedHome from "./components/TableEmployedHome";
 function LatestRecords() {
   return (
     <>
-      <div className="container-fluid px-0 border rounded">
+      <div className="container-fluid px-0 border rounded bg-white">
         <FiltersHome />
         <TableEmployedHome/>
       </div>

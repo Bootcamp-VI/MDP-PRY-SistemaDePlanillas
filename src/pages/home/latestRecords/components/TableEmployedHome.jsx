@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 import TdSimple from "./tableComponents/TdSimple";
 import TdDouble from "./tableComponents/TdDouble";
@@ -8,9 +8,8 @@ import TdDropdownBtn from "./tableComponents/TdDropdownBtn";
 import TableHeaderRow from "./tableComponents/TableHeaderRow";
 import { EmployeList } from "../../../../components/data/EmployedList";
 
-
 function TableEmployedHome() {
-  const columnNames = ['Código', 'Empleado', 'Documento', 'Sueldo', 'Planilla', 'Estado', 'Acción'];
+  const columnNames = ["Código", "Empleado", "Documento", "Sueldo", "Planilla", "Estado", "Acción"];
   const actions = [
     { label: "Ver", action: "view" },
     { label: "Editar", action: "edit" },
@@ -54,54 +53,58 @@ function TableEmployedHome() {
   };
 
   return (
-    <div className="table-responsive">
-      <table className="table">
-        <TableHeaderRow columnNames={columnNames} />
-        <tbody>
-          {currentItems.map((registro, index) => (
-            <tr key={index}>
-              <TdSimple text={registro.codigo} />
-              <TdImageText
-                primaryText={registro.empleado}
-                secondaryText="00/00/00000"
-                urlImage="../../src/assets/images/perfil2.jpg"
-                maxWidthPx="45px"
-              />
-              <TdDouble primaryText={registro.documento} secondaryText={"DNI"} />
-              <TdDouble primaryText={registro.sueldo} secondaryText={"Paid"} />
-              <TdSimple text={registro.planilla === false ? "Planilla" : "RxH"} />
-              <TdState stateValue={registro.estado} stateTrue="Activo" stateFalse="Inactivo" />
-              <TdDropdownBtn buttonName="Acciones" actions={actions} onSelectAction={handleActionSelect} />
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <span className="text-body-tertiary px-3">
-        Mostrando {currentItems.length} registros de {EmployeList.length} 
-      </span>
-      <div className="pagination-important">
-        <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn btn-pagination-important-active btn-border mx-1">
-          <i className="fa-solid fa-chevron-left"></i>
-        </button>
-        {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-          (page) => (
-            <button
-              key={page}
-              onClick={() => goToPage(page)}
-              disabled={currentPage === page}
-              type="button" className="btn btn-primary btn-numbers-important btn-border mx-1"
-            >
-              {page}
+    <div>
+      <div className="table-responsive mx-3">
+        <table className="table">
+          <TableHeaderRow columnNames={columnNames} />
+          <tbody>
+            {currentItems.map((registro, index) => (
+              <tr key={index}>
+                <TdSimple text={registro.codigo} />
+                <TdImageText
+                  primaryText={registro.empleado}
+                  secondaryText="00/00/00000"
+                  urlImage="../../src/assets/images/perfil2.jpg"
+                  maxWidthPx="45px"
+                />
+                <TdDouble primaryText={registro.documento} secondaryText={"DNI"} />
+                <TdDouble primaryText={registro.sueldo} secondaryText={"Paid"} />
+                <TdSimple text={registro.planilla === false ? "Planilla" : "RxH"} />
+                <TdState stateValue={registro.estado} stateTrue="Activo" stateFalse="Inactivo" />
+                <TdDropdownBtn buttonName="Acciones" actions={actions} onSelectAction={handleActionSelect} />
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="mx-3 row">
+          <div className="col-8">
+            <span className="text-body-tertiary px-3">
+              Mostrando {currentItems.length} registros de {EmployeList.length}
+            </span>
+          </div>
+          <div className="col-4">
+            <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn  btn-border mx-1">
+              <i className="fa-solid fa-chevron-left"></i>
             </button>
-          )
-        )}
-        <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn btn-pagination-important-active btn-border mx-1">
-          <i className="fa-solid fa-chevron-right"></i>
-        </button>
+            {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => goToPage(page)}
+                disabled={currentPage === page}
+                type="button"
+                className="btn btn-primary btn-dark-important btn-border mx-1"
+              >
+                {page}
+              </button>
+            ))}
+            <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn  btn-border mx-1">
+              <i className="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
-
 
 export default TableEmployedHome;
