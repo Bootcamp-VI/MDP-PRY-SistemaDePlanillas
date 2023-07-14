@@ -4,8 +4,8 @@ import background from "../Card/Top.svg";
 function MiniCard() {
   return (
     <div
-      className="card-mini "
-      style={{ width: "365px", height: "130px" }}
+      className="card-mini m-auto"
+      style={{ width: "365px" }}
     >
       <div className="text-white card-body bg-danger d-flex justify-content-around align-items-center p-2 border-1 rounded-3">
         <div className="">

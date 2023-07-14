@@ -26,14 +26,14 @@ function Dashboard() {
   };
 
   return (
-    <>
-      <div className="container-activities d-flex flex-wrap justify-content-around align-items-center border rounded mx-2 my-4  p-3">
+    <div className="container-lg">
+      <div className="container-cards-dashboard border rounded p-2 my-2">
         <Card typeEmployee="empleados" totalEmployees={100} nameCompany="MDP" />
         <Card typeEmployee="usuarios" totalEmployees={20} nameCompany="MDP" />
         <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity} />
       </div>
       <LatestRecords />
-    </>
+    </div>
   );
 }
 

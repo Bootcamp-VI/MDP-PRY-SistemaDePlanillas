@@ -9,7 +9,7 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
   return (
     <>
     
-      <div className={`card-custom ${showActivities ? 'd-none' : 'd-block'}`}>
+      <div className={`card-custom border p-1 ${showActivities ? 'd-none' : 'd-block'}`}>
         <div className="container position-relative py-3 ">
           <h5 className="title-lastActivities">Actividades Recientes</h5>
           <button className="floatbutton1" onClick={() => setShowActivities(!showActivities)}>-</button>
@@ -42,7 +42,7 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
         </div>
       </div>
 
-    <div className={`card card-mini-act bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} style={{  width: "365px" }}>
+    <div className={`card card-mini-act m-auto bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} style={{  width: "365px" }}>
         <div className="card-body d-flex justify-content-between align-items-center py-3">
           <h6 className="card-title text-dark  fw-bold me-1 mb-0">Actividades Recientes</h6>
           <a onClick={() => setShowActivities(!showActivities)} className="btn btn-sm text-primary">Ver más</a>
