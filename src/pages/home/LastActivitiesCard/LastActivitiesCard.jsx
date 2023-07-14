@@ -1,10 +1,27 @@
-import { useState } from 'react'
-import { ActivityBox } from './ActivityBox'
-import './styles.css'
+import { useState, useEffect } from 'react';
+import { ActivityBox } from './ActivityBox';
+import './styles.css';
 
 export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
-  
-  const [showActivities, setShowActivities] = useState(true)
+  const [showActivities, setShowActivities] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setShowActivities(true);
+      } else {
+        setShowActivities(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize); 
+
+    return () => {
+    window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -42,12 +59,13 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
         </div>
       </div>
 
-    <div className={`card card-mini-act bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} style={{  width: "365px" }}>
-        <div className="card-body d-flex justify-content-between align-items-center py-3">
+    <div className={`card card-mini-act bg-light  ${!showActivities ? 'd-none' : 'd-block'}`} style={{  width: "365px" }}>
+        <div className="text-white card-body bg-while d-flex justify-content-around align-items-center ">
           <h6 className="card-title text-dark  fw-bold me-1 mb-0">Actividades Recientes</h6>
           <a onClick={() => setShowActivities(!showActivities)} className="btn btn-sm text-primary">Ver más</a>
         </div>      
     </div>
+
 
     </>
   )
