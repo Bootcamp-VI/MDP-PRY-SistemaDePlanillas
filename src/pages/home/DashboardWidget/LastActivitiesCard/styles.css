@@ -5,8 +5,8 @@
   /* margin: auto; */
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax( auto, 1fr) );
-  
+  grid-template-columns: repeat(3, 1fr) ;
+  /* background-color: #293959; */
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -142,17 +142,24 @@
 
 @media (max-width: 1198px) {
   
+  .container-cards-dashboard {
+    grid-template-columns: repeat(2, 1fr) ;
+  }
+
   .card-custom {
+    
     grid-column: 1/-1;    
 
   }
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   
   .container-cards-dashboard {
-    grid-template-columns: repeat(auto-fit, max( auto, 1fr) );   
+    grid-template-columns:  1fr ;   
+
+    background-color: #C9F7F5;
   }
 
 }

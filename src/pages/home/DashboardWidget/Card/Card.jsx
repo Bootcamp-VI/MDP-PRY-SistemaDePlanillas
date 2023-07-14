@@ -59,7 +59,7 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
             </div>
           </div>
         </div>
-        <div className="card-footer bg-secondary bg-opacity-25">
+        <div className="footer-widget">
           <h1>{totalEmployees}</h1>
           <span>{typeEmployee} Registrados</span>
         </div>

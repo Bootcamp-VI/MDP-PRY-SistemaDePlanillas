@@ -21,9 +21,19 @@
 
 }
 
+.card-mini {
+  max-width: 365px;
+}
+
 .card-content{
 
   border-radius: 15px 15px 0px 0px;
+}
+
+.footer-widget {
+  background-color: rgb(199, 204, 205);
+  padding: 5px;
+  border-radius: 0px 0px 15px 15px ;
 }
 
 .cart-type-widget {
