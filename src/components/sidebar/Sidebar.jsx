@@ -1,5 +1,5 @@
 import { BiSolidUser } from "react-icons/bi";
-import { FaBuildingUser,FaHouse } from "react-icons/fa6";
+import { FaBuildingUser, FaHouse } from "react-icons/fa6";
 import { GiReceiveMoney } from "react-icons/gi";
 import { IoMdSettings } from "react-icons/io";
 
@@ -12,6 +12,7 @@ import {
 
 import { Link } from "react-router-dom";
 import "../sidebar/Sidebar.css";
+import HeaderSidebar from "./HeaderSidebar";
 
 function Sidebar({ toggled, handleToggleSidebar }) {
   return (
@@ -24,7 +25,7 @@ function Sidebar({ toggled, handleToggleSidebar }) {
         toggled={toggled}
         breakPoint="all"
       >
-        <div style={{ marginTop: "58px" }}></div>
+        <HeaderSidebar handleToggleSidebar={handleToggleSidebar} />
         <Menu
           menuItemStyles={{
             button: ({ level, active, disabled }) => {
