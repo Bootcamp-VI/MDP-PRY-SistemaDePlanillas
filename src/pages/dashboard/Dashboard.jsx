@@ -1,7 +1,7 @@
 import { ViewUser } from "./viewUser/main";
 import { EmployeList } from "../../components/data/EmployedList";
-import Card from "../home/grupo3/Card/Card";
-import { LastActivitiesCard } from "../home/LastActivitiesCard/LastActivitiesCard";
+import Card from "../home/DashboardWidget/Card/Card";
+import { LastActivitiesCard } from "../home/DashboardWidget/LastActivitiesCard/LastActivitiesCard";
 import LatestRecords from "../home/latestRecords/LatestRecords";
 
 import { lastActivities } from "../../components/data/lastActivities";

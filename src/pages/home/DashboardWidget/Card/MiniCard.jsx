@@ -1,19 +1,24 @@
 import { FaBuildingUser, FaUser } from "react-icons/fa6";
-import background from "../Card/Top.svg";
 
-function MiniCard() {
+function MiniCard({ typeEmployee, totalEmployees, nameCompany }) {
   return (
     <div
       className="card-mini m-auto"
       style={{ width: "365px" }}
     >
-      <div className="text-white card-body bg-danger d-flex justify-content-around align-items-center p-2 border-1 rounded-3">
+      <div className={`text-white card-body background-card-${typeEmployee == 'empleados' ? 'red' : 'blue'} d-flex justify-content-around align-items-center p-2 border-1 rounded-3`}>
         <div className="">
-          <span>Empleados MDP</span>
-          <h1>
-            <FaBuildingUser />
-            100
-          </h1>
+          <span>{typeEmployee} {nameCompany}</span>
+          <div className="d-flex justify-content-evenly align-items-center">
+            <div>
+              <h2 className="m-0"> {totalEmployees} </h2>
+            </div>
+            <div>
+            { typeEmployee == "empleados"
+              ? <FaBuildingUser size={24} />
+              : <FaUser size={24} />}
+            </div> 
+          </div>
         </div>
         <div className="">
           <div className="dropdown">

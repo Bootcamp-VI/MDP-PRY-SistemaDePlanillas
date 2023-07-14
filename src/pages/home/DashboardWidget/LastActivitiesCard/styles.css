@@ -139,10 +139,21 @@
   margin: auto;
 }
 
-/* @media (max-width: 870px) {
+@media (max-width: 1198px) {
+  
+  .card-custom {
+    grid-column: 1/-1;    
 
-  .container-activities {
+  }
+
+}
+
+/* 
+@media (max-width: 870px) {
+
+  .container-cards-dashboard {
     height: auto;  
+    background-color: #293959;
   }
   .card-data {
     margin-top: 30px;
@@ -155,9 +166,11 @@
   }
 }
 
+
 @media (min-width: 870px) and (max-width: 1520px) {
-  .container-activities {
+  .container-cards-dashboard {
     height: auto;
+    background-color: #c3d5f7;
   }
   .card-custom {
     display: none !important;
@@ -168,7 +181,7 @@
 }
 
 @media (min-width: 1520px) {
-  .container-activities {
+  .container-cards-dashboard {
     height: auto;
   }
 } */

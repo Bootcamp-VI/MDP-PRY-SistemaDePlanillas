@@ -1,0 +1,12 @@
+.background-card-blue {
+  position: relative;
+  background-image: url('./bg-card-blue.svg');
+  background-repeat: no-repeat; 
+}
+
+.background-card-red{
+  position: relative;
+  background-image: url('./bg-card-red.svg');
+  background-repeat: no-repeat;
+}
+
