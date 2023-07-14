@@ -1,11 +1,11 @@
 
 .container-cards-dashboard {
-  width: 100%;
+  width: auto;
   height: 100%;
   /* margin: auto; */
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax( 350px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax( auto, 1fr) );
   
   gap: 10px;
   justify-content: center;
@@ -15,7 +15,8 @@
 
 .card-custom {
   border-radius: 12px;
-  width: 365px;
+  width: 100%;
+  max-width: 365px;
   height: 335px;
   box-sizing: border-box;
   margin: auto;
@@ -144,6 +145,14 @@
   .card-custom {
     grid-column: 1/-1;    
 
+  }
+
+}
+
+@media (max-width: 600px) {
+  
+  .container-cards-dashboard {
+    grid-template-columns: repeat(auto-fit, max( auto, 1fr) );   
   }
 
 }

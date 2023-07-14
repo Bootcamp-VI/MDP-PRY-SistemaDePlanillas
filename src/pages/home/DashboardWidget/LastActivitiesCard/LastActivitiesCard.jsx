@@ -59,7 +59,7 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
         </div>
       </div>
 
-    <div className={`card d-md-none card-mini-act m-auto bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} style={{  width: "365px" }}>
+    <div className={`card d-md-none card-mini-act m-auto bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} >
         <div className="card-body d-flex justify-content-between align-items-center py-3">
           <h6 className="card-title text-dark  fw-bold me-1 mb-0">Actividades Recientes</h6>
           <a onClick={() => setShowActivities(!showActivities)} className="btn btn-sm text-primary">Ver más</a>

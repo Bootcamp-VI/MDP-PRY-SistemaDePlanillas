@@ -10,3 +10,27 @@
   background-repeat: no-repeat;
 }
 
+.card-widget {
+
+  width: 100%;
+  max-width: 365px;
+  height: 335px;
+  /* padding: 5px; */
+  border-radius: 15px;
+  
+
+}
+
+.card-content{
+
+  border-radius: 15px 15px 0px 0px;
+}
+
+.cart-type-widget {
+ 
+}
+.card-type-emp {
+  background-color: aliceblue;
+  height: 90px;
+  width: 90px;
+}

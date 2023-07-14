@@ -7,8 +7,9 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
 
   return (
     <>
-      <div className="card d-none d-md-block m-auto" style={{ width: "365px", height: "335px" }}>
-        <div className={`card-body background-card-${typeEmployee == 'empleados' ? 'red' : 'blue'}  d-flex flex-column justify-content-between`} style={{ height: "236px" }}>
+      <div className="card-widget d-none d-md-block m-auto" >
+        <div className={`card-content bg-${typeEmployee == 'empleados' ? 'danger' : 'info'}  
+        d-flex flex-column justify-content-between p-3`} style={{ height: "236px" }}>
           <div className="header d-flex justify-content-between align-items-center">
             <span className="text-white">{typeEmployee}</span>
             <div className="dropdown">
@@ -39,10 +40,9 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
               </ul>
             </div>
           </div>
-          <div className="body d-flex justify-content-end">
+          <div className="cart-type-widget ">
             <div
-              className="card d-flex align-items-center justify-content-center"
-              style={{ width: "160px", height: "120px" }}
+              className="card-type-emp"
             >
               <div className="text-info text-center">
                 <div>
