@@ -1,6 +1,6 @@
 function FiltersHome() {
   return (
-    <div className="row my-3">
+    <div className="row my-3 w-100">
       <div className="col-lg-4 col-md-12 mb-lg-0">
         <div className="px-4 py-1">
           <h6 className="mb-0 pt-1 fc-primary-important">Últimos Registros de empleados</h6>
