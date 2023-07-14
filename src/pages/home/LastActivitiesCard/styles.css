@@ -22,7 +22,6 @@
 
   .container-activities {
     height: auto;
-    background-color: #293959;
   }
 
   .card-data {
@@ -43,7 +42,6 @@
 
   .container-activities {
     height: 515px;
-    background-color: #C9F7F5;
   }
 
   .card-custom {
@@ -59,12 +57,9 @@
 @media (min-width: 1520px) {
   .container-activities {
     height: 415px;
-    background-color: #09827c;
   }
 
 }
-
-
 
  
  .header-cardActivities {

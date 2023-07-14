@@ -1,14 +1,22 @@
+
 import { FaBuildingUser, FaUser } from "react-icons/fa6";
 import background from "../Card/Top.svg";
 import "./Card.css";
+import MiniCard from "./MiniCard";
 
-function Card({ typeEmployee, totalEmployees, nameCompany }) {
+function Card() {
+  const svgBackgroundStyles = {
+    backgroundImage: background,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+  };
 
   return (
-    <div className="card card-data" style={{ minWidth: "365px", height: "335px" }}>
+    <>
+    <div className="card d-none d-md-block" style={{ width: "365px" }}>
       <div className="card-body background-card d-flex flex-column justify-content-between">
         <div className="header d-flex justify-content-between align-items-center">
-          <span className="text-white">{ typeEmployee }</span>
+          <span className="text-white">Empleados</span>
           <div className="dropdown">
             <button
               className="btn bg-secondary text-white bg-opacity-10 dropdown-toggle"
@@ -44,24 +52,24 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
           >
             <div className="text-info text-center">
               <div>
-                {
-                  typeEmployee == 'empleados' 
-                  ? <FaBuildingUser size={32} />
-                  : <FaUser size={32} /> 
-                }                
+                <FaBuildingUser size={32} />
               </div>
-              <div>                                 
-                  <span>{ typeEmployee } { nameCompany }</span>                  
+              <div>
+                <span>Empleados MDP</span>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="card-footer bg-secondary bg-opacity-25">
-        <h1>{ totalEmployees }</h1>
-        <span>{ typeEmployee } Registrados</span>
+        <h1>100</h1>
+        <span>Empleados Registrados</span>
       </div>
-    </div >
+    </div>
+    <div className="d-md-none">
+      <MiniCard />
+    </div>
+    </>
   );
 }
 
