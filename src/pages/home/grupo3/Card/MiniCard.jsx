@@ -1,5 +1,4 @@
 import { FaBuildingUser, FaUser } from "react-icons/fa6";
-import background from "../Card/Top.svg";
 
 function MiniCard() {
   return (

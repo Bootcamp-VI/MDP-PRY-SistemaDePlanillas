@@ -1,8 +1,12 @@
-.background-card {
+.background-card-blue {
   position: relative;
-  /* height: 100vh;*/
-  /* width:365;  */
-  background-image: url('./Top.svg');
-   /* background-size: cover; */
+  background-image: url('./bg-card-blue.svg');
   background-repeat: no-repeat; 
 }
+
+.background-card-red{
+  position: relative;
+  background-image: url('./bg-card-red.svg');
+  background-repeat: no-repeat;
+}
+
