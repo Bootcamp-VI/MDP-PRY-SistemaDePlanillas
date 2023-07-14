@@ -1,4 +1,4 @@
-import "./baseTemplate.css";
+import "./BaseTemplate.css";
 import { useState } from "react";
 import { ItemsMenuData } from "../data/ItemsMenuData";
 import ContentMainRoutes from "../../routes/ContentMainRoutes";

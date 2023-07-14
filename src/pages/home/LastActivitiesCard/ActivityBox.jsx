@@ -3,9 +3,9 @@ export const ActivityBox = ({ activity, index }) => {
   return (
             
     <div  
-    className={`row flex-nowrap align-items-center overflow-auto mt-2 activity ${index === 0 ? 'new-activity' : 'old-activity'}`}>
+    className={`row flex-nowrap align-items-center overflow-auto my-2 activity ${index === 0 ? 'new-activity' : 'old-activity'}`}>
       <div className="col-2">
-        <div className="text-hour-activity">
+        <div className="text-hour-activity ">
           { activity.hour }
         </div>
       </div>

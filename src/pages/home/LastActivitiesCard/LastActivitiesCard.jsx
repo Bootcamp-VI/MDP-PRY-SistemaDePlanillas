@@ -9,8 +9,8 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
   return (
     <>
     
-      <div className={`card p-2 card-custom my-5 ${showActivities ? 'd-none' : 'd-block'}`}>
-        <div className="container position-relative mt-3">
+      <div className={`card-custom ${showActivities ? 'd-none' : 'd-block'}`}>
+        <div className="container position-relative py-3 ">
           <h5 className="title-lastActivities">Actividades Recientes</h5>
           <button className="floatbutton1" onClick={() => setShowActivities(!showActivities)}>-</button>
           <button className="floatbutton" onClick={handleAddActivity}>+</button>
@@ -19,14 +19,14 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
           <div className="row align-items-center">
             <div className="container mx-auto">
               <div className="row flex-nowrap align-items-center overflow-auto">
-                <div className="col-lg-3 col-md-4 col-12">
+                <div className="col-4 ">
                   <div className="header-cardActivities text-truncate">Hora</div>
                 </div>
-                <div className="col-lg-6 col-md-4 col-12">
+                <div className="col-5 ">
                   <div className='header-cardActivities text-truncate'>Actividad reciente</div>
                 </div>
-                <div className="col-lg-3 col-md-4 col-12">
-                  <div className='header-cardActivities-img text-start ps-3'>
+                <div className="col-3 ">
+                  <div className='header-cardActivities-img text-center ps-3'>
                     <img src="../../src/assets/icons/dashboard/points.png" alt="" />
                   </div>
                 </div>

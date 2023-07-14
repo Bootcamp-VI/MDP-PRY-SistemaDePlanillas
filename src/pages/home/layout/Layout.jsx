@@ -15,7 +15,7 @@ export const Layout = ({ children }) => {
         handleToggleSidebar={handleToggleSidebar}
       />
       <Sidebar toggled={toggled} handleToggleSidebar={handleToggleSidebar} />
-      <div style={{ height:"600px",overflow:"auto", margin: "10px" }}>{children}</div>
+      <>{children}</>
       
     </div>
   );

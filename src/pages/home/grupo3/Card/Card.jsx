@@ -13,8 +13,8 @@ function Card() {
 
   return (
     <>
-    <div className="card d-none d-md-block" style={{ width: "365px" }}>
-      <div className="card-body background-card d-flex flex-column justify-content-between">
+    <div className="card d-none d-md-block " style={{ width: "365px", height: "335px" }}>
+      <div className="card-body background-card d-flex flex-column justify-content-between" style={{ height: "236px"}}>
         <div className="header d-flex justify-content-between align-items-center">
           <span className="text-white">Empleados</span>
           <div className="dropdown">

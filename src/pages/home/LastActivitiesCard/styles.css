@@ -1,79 +1,30 @@
 
+.container-activities {
+  height: 975px;
+}
 
 .card-custom {
   border-radius: 12px;
   background: #F3F6F9;
-  width: 365px;  
+  width: 365px;
   height: 335px;
-  margin-top: 30px;
-    
 }
 
 .card-mini-act {
   display: none;
   margin-top: 20px;
 }
-.container-activities {
-  height: 975px;
-}
 
-
-@media (max-width: 870px) {
-
-  .container-activities {
-    height: auto;
-  }
-
-  .card-data {
-    margin-top: 30px;
-  }
-
-  .card-custom {
-    display: none;
-  }  
-
-  .card-mini-act {
-    display: block;
-  }
-  
-}
-
-@media (min-width: 870px) and (max-width: 1520px) {
-
-  .container-activities {
-    height: 515px;
-  }
-
-  .card-custom {
-    display: none;
-  }  
-
-  .card-mini-act {
-    display: block;
-  }
-  
-}
-
-@media (min-width: 1520px) {
-  .container-activities {
-    height: 415px;
-  }
-
-}
-
- 
- .header-cardActivities {
+.header-cardActivities {
   color: #80808F;
-  font-family: Poppins;
-  font-size: 12px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 500;
-  line-height: 23px; 
+  line-height: 23px;
 }
 
 .title-lastActivities {
   color: #243250;
-  font-family: Poppins;
   font-size: 17px;
   font-style: normal;
   font-weight: 600;
@@ -83,15 +34,15 @@
 .text-hour-activity {
 
   font-style: normal;
-  font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
-  color: #293959;
+  color: #293959;  
+  display: inline-block;
+  white-space: nowrap;
 }
 
-.text-name-activity{
+.text-name-activity {
   font-style: normal;
-  font-family: Poppins;
   font-size: 13px;
   font-weight: 600;
   color: #293959;
@@ -101,11 +52,12 @@
 
 .header-cardActivities {
   color: #80808F;
-  font-family: Poppins;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 23px;
+  line-height: 23px;  
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .text-truncate {
@@ -120,10 +72,10 @@
 
 }
 
-.status-activity img{
+.status-activity img {
   position: relative;
   left: -4px;
- }
+}
 
 .lineagris {
   width: 3px;
@@ -136,7 +88,7 @@
 /* Animation list */
 
 .last-activities {
-  height: 225px; 
+  height: 225px;
 }
 
 .new-activity {
@@ -148,15 +100,14 @@
     opacity: 0;
     transform: translateY(-35px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.old-activity {
- 
-}
+.old-activity {}
 
 /* TEST btn */
 .floatbutton {
@@ -168,6 +119,7 @@
   height: 30px;
   margin: auto;
 }
+
 .floatbutton1 {
   top: 0;
   right: 20px;
@@ -176,4 +128,38 @@
   width: 20px;
   height: 30px;
   margin: auto;
+}
+
+@media (max-width: 870px) {
+
+  .container-activities {
+    height: auto;  
+  }
+  .card-data {
+    margin-top: 30px;
+  }
+  .card-custom {
+    display: none;
+  }
+  .card-mini-act {
+    display: block;
+  }
+}
+
+@media (min-width: 870px) and (max-width: 1520px) {
+  .container-activities {
+    height: auto;
+  }
+  .card-custom {
+    display: none !important;
+  }
+  .card-mini-act {
+    display: block !important;
+  }
+}
+
+@media (min-width: 1520px) {
+  .container-activities {
+    height: auto;
+  }
 }
