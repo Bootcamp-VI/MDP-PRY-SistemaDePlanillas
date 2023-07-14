@@ -8,7 +8,7 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
   return (
     <>
       <div className="card-widget d-none d-md-block m-auto" >
-        <div className={`card-content bg-${typeEmployee == 'empleados' ? 'danger' : 'info'}  
+        <div className={`card-content background-card-${typeEmployee == 'empleados' ? 'red' : 'blue'}  
         d-flex flex-column justify-content-between p-3`} style={{ height: "236px" }}>
           <div className="header d-flex justify-content-between align-items-center">
             <span className="text-white">{typeEmployee}</span>
@@ -45,13 +45,13 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
               className="card-type-emp"
             >
               <div className="text-info text-center">
-                <div>
-                  {
-                    typeEmployee == "empleados"
-                      ? <FaBuildingUser size={32} />
-                      : <FaUser size={32} />
-                  }
-                </div>
+                {
+                  typeEmployee == "empleados"
+                    ? <FaBuildingUser size={28} />
+                    : <FaUser size={28} />
+                }
+              </div>
+              <div className="text-info text-center">
                 <div>
                   <span>{typeEmployee} {nameCompany}</span>
                 </div>
@@ -65,7 +65,7 @@ function Card({ typeEmployee, totalEmployees, nameCompany }) {
         </div>
       </div>
       <div className="d-md-none">
-        <MiniCard  typeEmployee={typeEmployee} totalEmployees={totalEmployees} nameCompany={nameCompany} />
+        <MiniCard typeEmployee={typeEmployee} totalEmployees={totalEmployees} nameCompany={nameCompany} />
       </div>
     </>
   );

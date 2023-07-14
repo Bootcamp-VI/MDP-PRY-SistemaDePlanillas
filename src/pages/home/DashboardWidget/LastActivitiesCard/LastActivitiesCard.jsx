@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ActivityBox } from './ActivityBox';
 import './styles.css';
+import { FaRegClock, FaSortUp, } from 'react-icons/fa6';
 
 export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
   const [showActivities, setShowActivities] = useState(true);
@@ -16,21 +17,21 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize); 
+    window.addEventListener('resize', handleResize);
 
     return () => {
-    window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <>
-    
+
       <div className={`card-custom d-md-block border p-1 ${showActivities ? 'd-none' : 'd-block'}`}>
         <div className="container position-relative py-3 ">
           <h5 className="title-lastActivities">Actividades Recientes</h5>
-          <button className="floatbutton1" onClick={() => setShowActivities(!showActivities)}>-</button>
-          <button className="floatbutton" onClick={handleAddActivity}>+</button>
+          {/* <button className="floatbutton1" onClick={() => setShowActivities(!showActivities)}>-</button> */}
+          <FaSortUp className='rec-close' onClick={() => { setShowActivities(!showActivities) }} size={28} color='gray' />
         </div>
         <div className="container">
           <div className="row align-items-center">
@@ -59,12 +60,15 @@ export const LastActivitiesCard = ({ activities, handleAddActivity }) => {
         </div>
       </div>
 
-    <div className={`card d-md-none card-mini-act m-auto bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} >
+      <div className={`mini-card-activities d-md-none card-mini-act m-auto bg-light border-1 rounded-3 ${!showActivities ? 'd-none' : 'd-block'}`} >
         <div className="card-body d-flex justify-content-between align-items-center py-3">
-          <h6 className="card-title text-dark  fw-bold me-1 mb-0">Actividades Recientes</h6>
+          <div className='d-flex align-items-center'>
+            <FaRegClock size={28} />
+            <h6 className="card-title text-dark fw-bold ps-2">Actividades Recientes</h6>
+          </div>
           <a onClick={() => setShowActivities(!showActivities)} className="btn btn-sm text-primary">Ver más</a>
-        </div>      
-    </div>
+        </div>
+      </div>
 
 
     </>

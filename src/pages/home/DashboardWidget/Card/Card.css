@@ -1,12 +1,16 @@
 .background-card-blue {
   position: relative;
   background-image: url('./bg-card-blue.svg');
+  object-fit: fill;
+  background-position: center;
   background-repeat: no-repeat; 
 }
 
 .background-card-red{
   position: relative;
   background-image: url('./bg-card-red.svg');
+  object-fit: fill;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -15,10 +19,8 @@
   width: 100%;
   max-width: 365px;
   height: 335px;
-  /* padding: 5px; */
   border-radius: 15px;
   
-
 }
 
 .card-mini {
@@ -31,16 +33,37 @@
 }
 
 .footer-widget {
-  background-color: rgb(199, 204, 205);
-  padding: 5px;
+  background-color: rgb(240, 240, 240);
+  padding: 15px 0px 15px 20px;
   border-radius: 0px 0px 15px 15px ;
 }
 
-.cart-type-widget {
- 
+.footer-widget h1 {
+  font-size: 25px;
+  font-weight: 700;
 }
+
+.footer-widget span {
+  font-size: 15px;
+  color: rgb(177, 177, 177);
+  font-weight: 600;
+}
+
+.cart-type-widget {
+  display: flex;
+  justify-content: end; 
+}
+
+
+
 .card-type-emp {
   background-color: aliceblue;
-  height: 90px;
-  width: 90px;
+  height: 110px;
+  width: 140px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
 }

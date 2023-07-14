@@ -5,7 +5,7 @@ function MiniCard({ typeEmployee, totalEmployees, nameCompany }) {
     <div
       className="card-mini m-auto"      
     >
-      <div className={`text-white card-body bg-${typeEmployee == 'empleados' ? 'danger' : 'info'} d-flex justify-content-around align-items-center p-2 border-1 rounded-3`}>
+      <div className={`text-white card-body background-card-${typeEmployee == 'empleados' ? 'red' : 'blue'} d-flex justify-content-around align-items-center p-2 border-1 rounded-3`}>
         <div className="">
           <span>{typeEmployee} {nameCompany}</span>
           <div className="d-flex justify-content-evenly align-items-center">
