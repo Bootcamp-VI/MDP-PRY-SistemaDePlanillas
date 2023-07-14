@@ -3,7 +3,7 @@ import { FaBuildingUser, FaUser } from "react-icons/fa6";
 function MiniCard() {
   return (
     <div
-      className="card-mini "
+      className="card-mini w-100"
       style={{ width: "365px", height: "130px" }}
     >
       <div className="text-white card-body bg-danger d-flex justify-content-around align-items-center p-2 border-1 rounded-3">
