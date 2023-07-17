@@ -19,7 +19,7 @@ function TableEmployedHome() {
   const handleActionSelect = (action) => {
     // Realiza la acción correspondiente según la opción seleccionada
     if (action === "view") {
-      // Acción para ver
+      
     } else if (action === "edit") {
       // Acción para editar
     } else if (action === "delete") {

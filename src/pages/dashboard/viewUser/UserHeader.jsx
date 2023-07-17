@@ -1,3 +1,4 @@
+
 import user_data from "../../../components/data/profile.json";
 import {
   MdAlternateEmail,
@@ -6,8 +7,13 @@ import {
   MdLocalPhone,
 } from "react-icons/md";
 import { LuEdit } from "react-icons/lu";
+import { useState } from "react";
+import { useEffect } from "react";
 
-export const UserHeader = () => {
+export const UserHeader = ( EmployeData, index) => {
+
+
+  console.log("x2",EmployeData.EmployeData);
   return (
     <>
       <div className="p-0">
@@ -40,28 +46,28 @@ export const UserHeader = () => {
                   alt="Foto de perfil"
                 />
               </div>
-              <h5 className="m-0 text-center">DNI:{user_data.documento.dni}</h5>
+              <h5 className="m-0 text-center">DNI:{EmployeData.EmployeData.documento}</h5>
             </div>
             <div className="col-md-8 col-12">
               <div className=" row d-flex align-items-center ">
-                <h3 className="col-md-7 col-10">{user_data.nombre}</h3>
-                <h3 className="col-md-2 col-2">{user_data.nacionalidad}</h3>
+                <h3 className="col-md-7 col-10">{EmployeData.EmployeData.nombre + " " + EmployeData.EmployeData.apellidoPaterno + " " + EmployeData.EmployeData.apellidoMaterno}</h3>
+                <h3 className="col-md-2 col-2">{EmployeData.EmployeData.pais}</h3>
                 <div className="col-md-3 col-12 d-none d-md-block">
                   <button className="btn btn-secondary  ">Editar <LuEdit/></button>
                 </div>
               </div>
               <div className="row">
                 <h5 className="col-12 mb-2">
-                  <MdPerson2 /> {user_data.cargo}
+                  <MdPerson2 /> {EmployeData.EmployeData.datosLaborales.cargo}
                 </h5>
                 <h5 className="col-12 mb-2">
-                  <MdLocationPin /> {user_data.datos_contacto.residencia}
+                  <MdLocationPin /> {EmployeData.EmployeData.datosResidencia.distrito + ", " + EmployeData.EmployeData.datosResidencia.departamento}
                 </h5>
                 <h5 className="col-12 mb-2">
-                  <MdAlternateEmail /> {user_data.datos_contacto.email}
+                  <MdAlternateEmail /> {EmployeData.EmployeData.datosContacto.correoEmpresa}
                 </h5>
                 <h5 className="col-12 mb-0">
-                  <MdLocalPhone /> {user_data.datos_contacto.telefono}
+                  <MdLocalPhone /> {EmployeData.EmployeData.datosContacto.celular}
                 </h5>
               </div>
             </div>

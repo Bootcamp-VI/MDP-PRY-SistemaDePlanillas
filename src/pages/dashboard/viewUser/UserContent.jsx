@@ -2,7 +2,8 @@ import { ContentSection } from "./ContentSection";
 import { useState } from "react";
 import WizarEmpleado from "./WizarEmpleado";
 
-export const UserContent = () => {
+export const UserContent = (EmployeData, index) => {
+  console.log("x3", EmployeData)
   let sectionName = ["Section 1", "Section 2"];
   const [activeButton, setActiveButton] = useState(1);
 
@@ -34,12 +35,12 @@ export const UserContent = () => {
       </div>
         {activeButton === 1 && (
           <>
-            <ContentSection sectionName={(sectionName = 1)} />
+            <ContentSection sectionName={(sectionName = 1)} EmployeData ={EmployeData.EmployeData}/>
           </>
         )}
         {activeButton === 2 && (
           <>
-            <WizarEmpleado />
+            <WizarEmpleado sectionName={(sectionName = 2)} EmployeData ={EmployeData.EmployeData}/>
           </>
         )}
     </>

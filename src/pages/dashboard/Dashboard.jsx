@@ -31,9 +31,29 @@ function Dashboard() {
         <Card typeEmployee="empleados" totalEmployees={100} nameCompany="MDP" />
         <Card typeEmployee="usuarios" totalEmployees={20} nameCompany="MDP" />
         <LastActivitiesCard activities={activities} handleAddActivity={handleAddActivity} />
+
       </div>
       <LatestRecords />
+      <button
+                    type="button"
+                    className="btn btn-info btn-sm m-1"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    <i className="fas fa-search"></i>
+                  </button>
+                  <div className="modal fade" id="exampleModal" tabIndex="-1">
+                    <div className="modal-dialog" style={{ maxWidth: "980px" }}>
+                      <div
+                        className="modal-content"
+                        style={{ backgroundColor: "#F1F1F1" }}
+                      >
+                        <ViewUser />
+                      </div>
+                    </div>
+                  </div>
     </div>
+    
   );
 }
 
