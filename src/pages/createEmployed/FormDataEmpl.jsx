@@ -1,6 +1,6 @@
-import FormOrganizationalData from "./components/dataEmplComp/FormOrganizationalData";
-import FormWorkerData from "./components/dataEmplComp/FormWorkerData";
-import FormWorkersPension from "./components/dataEmplComp/FormWorkersPension";
+import FormOrganizationalData from "./components/dataEmplLabo/FormOrganizationalData";
+import FormWorkerData from "./components/dataEmplLabo/FormWorkerData";
+import FormWorkersPension from "./components/dataEmplLabo/FormWorkersPension";
 
 export const FormDataEmpl = () => {
   return (
