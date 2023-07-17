@@ -13,9 +13,9 @@ function CreateEmployed() {
   };
 
   return (
-    <div className="container-fluid border rounded m-2 p-2">
+    <div className="container-fluid border rounded container-lg my-2">
       <FormPerfil />
-      <div className="container-fluid pt-0">
+      <div className="container-fluid px-0">
         <div className="d-flex flex-column flex-sm-row justify-content-between my-2">
           <button
             className={`btn btn-success btn-md border ${activeButton === 1 ? "btn-success" : "btn-light"} flex-fill me-2 mb-2 mb-sm-0`}
@@ -36,14 +36,14 @@ function CreateEmployed() {
             Datos Laborales
           </button>
           <button
-            className={`btn btn-success btn-md border ${activeButton === 4 ? "btn-success" : "btn-light"} flex-fill me-2 mb-2 mb-sm-0`}
+            className={`btn btn-success btn-md border ${activeButton === 4 ? "btn-success" : "btn-light"} flex-fill mb-2 mb-sm-0`}
             onClick={() => handleButtonClick(4)}
           >
             Otros datos
           </button>
         </div>
-        <div className="row">
-          <div className="col-12">
+        <div className="row mx-0">
+          <div className="col-12 mx-0 px-0">
             {activeButton === 1 && <FormDataPerson />}
             {activeButton === 2 && <FormContact />}
             {activeButton === 3 && <FormDataEmpl />}
