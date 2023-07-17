@@ -1,0 +1,16 @@
+.css-1laqnex {
+    border-right-style: none !important;
+}
+
+.custom-sidebar ::-webkit-scrollbar {
+    width: 0%;
+}
+
+.custom-sidebar ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: #fafafa;
+}

@@ -1,0 +1,17 @@
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+
+@media (min-width: 990px) {
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    transform: translate(10px, 40px);
+  }
+
+  .navbar-nav {
+    gap: 1rem;
+  }
+}
+

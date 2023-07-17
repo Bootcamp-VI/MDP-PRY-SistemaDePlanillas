@@ -1,5 +1,5 @@
 import MicrosoftLogin from "react-microsoft-login";
-import "../FormLogin/FormLogin.css";
+import "./FormLogin.css";
 
 
 export const FormLogin = () => {
@@ -39,7 +39,7 @@ export const FormLogin = () => {
         />
       </div>
 
-      <button type="submit" className="btn btn-primary btn-block mb-4 btn-login">
+      <button type="submit" className="btn btn-block mb-4 btn-login">
         Iniciar Sesión
       </button>
     </form>

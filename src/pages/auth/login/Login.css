@@ -13,3 +13,11 @@
   margin-top: 5.5em;
 }
 
+
+.bg-glass-custom-login {
+  border-radius: 15px !important;
+  border-width: 1px !important;
+  background-color: rgba(7, 6, 6, 0.6) !important;
+  backdrop-filter: blur(9px) !important;
+  opacity: 1 !important;
+}

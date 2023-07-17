@@ -1,43 +1,35 @@
   
   .form-title {
-        color: white;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
+        color: white !important;
+    font-size: 25px !important;
+    font-weight: bold !important;
+    text-align: center !important;
   }
   
   .btn-microsoft{
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 3em;
-    transition: 0.3s ease;
-    background-color: #fff;
-    color: #1E1E2D;
+    font-weight: bold  !important;
+    border: none !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    height: 3em !important;
+    transition: 0.3s ease !important;
+    background-color: #fff !important;
+    color: #1E1E2D !important;
   }
 
   .btn-login {
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    height: 3em;
-    transition: 0.3s ease;
-    background-color: #1E1E2D;
-    color: white;
-  }
-
-  .bg-glass{
-    border-radius: 15px;
-    border-width: 1px;
-    background-color: rgba(7, 6, 6, 0.6);
-    backdrop-filter: blur(9px);
-    opacity: 1;
+    font-weight: bold !important;
+    border: none !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    height: 3em !important;
+    transition: 0.3s ease !important;
+    background-color: #1E1E2D !important;
+    color: white !important;
   }
 
   .btn-login:hover {
     background-color: #3CB9FF!important;
-    color: white;
+    color: white !important;
     cursor: pointer !important;
   }

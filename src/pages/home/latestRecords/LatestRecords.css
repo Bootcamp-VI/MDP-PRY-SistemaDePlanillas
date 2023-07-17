@@ -1,0 +1,60 @@
+.bg-inline-success {
+  background-color: #c9f7f5 !important;
+  color: #1bc5bd !important;
+  padding: 7px 15px !important;
+}
+.bg-inline-warning {
+  background-color: #fff4de !important;
+  color: #ffa800 !important;
+  padding: 7px 10px !important;
+}
+
+.btn-fill-primary {
+  background-color: #3699ff !important;
+  border: #3699ff !important;
+}
+
+.btn-dark-important {
+  background-color: #1e1e2d !important;
+  border: #1e1e2d !important;
+  color: white !important;
+}
+
+.bg-secondary-important {
+  background-color: #f3f6f9 !important;
+}
+
+.fc-primary-important {
+  color: #243250 !important;
+}
+
+.fc-secondary-important {
+  color: #b5b5c3 !important;
+}
+
+.no-rounded {
+  border: 0 !important;
+}
+
+.custom-search {
+  border: #b5b5c3 !important;
+  border-radius: 10px !important;
+  background-color: #f3f6f9;
+  color: black;
+}
+
+.pagination-important {
+  float: right;
+}
+
+.btn-dark-important:disabled {
+  background-color: #3699ff !important ;
+}
+
+.btn-border {
+  border-radius: 0 !important;
+}
+
+.m-left-4 {
+  margin-left: 1rem;
+}
