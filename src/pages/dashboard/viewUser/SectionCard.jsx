@@ -13,7 +13,7 @@ export const SectionCard = ({objetos , tittle}) => {
           <div key={key} className="container">
           <div className="row mt-2">
             <div className="col d-flex align-items-center justify-content-between">
-              <p className="mb-0 fs-6">{objeto.nombre}:</p>
+              <p className="mb-0 fs-6 fw-bold">{objeto.nombre}:</p>
               <h5 className="mt-0 fs-6">{objeto.valor}</h5>
             </div>
           </div>

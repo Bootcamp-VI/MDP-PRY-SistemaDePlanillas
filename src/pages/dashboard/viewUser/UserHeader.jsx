@@ -34,7 +34,7 @@ export const UserHeader = ({ closeModal, EmployeData, index }) => {
             ></button>
           </div>
         </div>
-        <div className="card py-3">
+        <div className="card py-3 rounded-5">
           <div className="row">
             <div className="col-md-4 col-12">
               <div className="text-center">
@@ -44,11 +44,11 @@ export const UserHeader = ({ closeModal, EmployeData, index }) => {
                   alt="Foto de perfil"
                 />
               </div>
-              <h5 className="m-0 text-center mt-2 fs-5">DNI:{EmployeData.documento}</h5>
+             {/*  <h5 className="m-0 text-center mt-2 fs-5">DNI:{EmployeData.documento}</h5> */}
             </div>
-            <div className="col-md-8 col-12">
+            <div className="col-md-8 col-12 mx-5 mx-sm-0">
               <div className=" row d-flex align-items-center ">
-                <h3 className="fs-4 col-md-7 col-10">
+                <h3 className="fs-4 col-md-7 col-10 fw-bold text-center mt-3">
                   {EmployeData.nombre +
                     " " +
                     EmployeData.apellidoPaterno +
