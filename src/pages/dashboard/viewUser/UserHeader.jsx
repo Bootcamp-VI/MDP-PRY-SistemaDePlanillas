@@ -22,7 +22,7 @@ export const UserHeader = ({ closeModal, EmployeData, index }) => {
           </div>
           {/* <div className="col-8 col-md-11 text-center mx-auto"> */}
           <div className="col-8 col-md-11">
-            <h1 className=" ">Perfil de Empleado</h1>
+            <h1 className="fs-4 text-capitalize fw-bold">Perfil de Empleado</h1>
           </div>
           <div className="col text-center">
             <button
@@ -40,15 +40,15 @@ export const UserHeader = ({ closeModal, EmployeData, index }) => {
               <div className="text-center">
                 <img
                   src={user_data.foto}
-                  className="img-fluid rounded-4"
+                  className="img-fluid rounded-4 w-50"
                   alt="Foto de perfil"
                 />
               </div>
-              <h5 className="m-0 text-center">DNI:{EmployeData.documento}</h5>
+              <h5 className="m-0 text-center mt-2 fs-5">DNI:{EmployeData.documento}</h5>
             </div>
             <div className="col-md-8 col-12">
               <div className=" row d-flex align-items-center ">
-                <h3 className="col-md-7 col-10">
+                <h3 className="fs-4 col-md-7 col-10">
                   {EmployeData.nombre +
                     " " +
                     EmployeData.apellidoPaterno +
