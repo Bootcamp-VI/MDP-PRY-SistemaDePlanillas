@@ -12,10 +12,12 @@ data:
     apellidoPaterno:"Doe",
     apellidoMaterno: "Smith",
     pais:"Peru",
+    codigoPais:"PE",
     fechaNacimiento:"20/11/1994",
     sexo:"Masculino",
     datosResidencia:{
       paisResidencia:"Peru",
+      codigoPaisResidencia:"PE",
       departamento:"Lima",
       provincia: "Lima",
       distrito:"Lima",

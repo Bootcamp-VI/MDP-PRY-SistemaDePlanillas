@@ -1,4 +1,3 @@
-
 import user_data from "../../../components/data/profile.json";
 import {
   MdAlternateEmail,
@@ -10,10 +9,8 @@ import { LuEdit } from "react-icons/lu";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export const UserHeader = ({ closeModal, EmployeData, index}) => {
-
-
-  console.log("x2",EmployeData);
+export const UserHeader = ({ closeModal, EmployeData, index }) => {
+  console.log("x2", EmployeData);
   return (
     <>
       <div className="p-0">
@@ -33,7 +30,7 @@ export const UserHeader = ({ closeModal, EmployeData, index}) => {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-              onClick={ closeModal }
+              onClick={closeModal}
             ></button>
           </div>
         </div>
@@ -51,10 +48,23 @@ export const UserHeader = ({ closeModal, EmployeData, index}) => {
             </div>
             <div className="col-md-8 col-12">
               <div className=" row d-flex align-items-center ">
-                <h3 className="col-md-7 col-10">{EmployeData.nombre + " " + EmployeData.apellidoPaterno + " " + EmployeData.apellidoMaterno}</h3>
-                <h3 className="col-md-2 col-2">{EmployeData.pais}</h3>
+                <h3 className="col-md-7 col-10">
+                  {EmployeData.nombre +
+                    " " +
+                    EmployeData.apellidoPaterno +
+                    " " +
+                    EmployeData.apellidoMaterno}
+                </h3>
+                <img
+                  className="col-md-2 col-2"
+                  src={`https://flagsapi.com/${EmployeData.codigoPais}/flat/64.png`}
+                  style={{ width: "60px" }}
+                ></img>
+                {/* <h3 className="col-md-2 col-2">{EmployeData.pais}</h3> */}
                 <div className="col-md-3 col-12 d-none d-md-block">
-                  <button className="btn btn-secondary  ">Editar <LuEdit/></button>
+                  <button className="btn btn-secondary  ">
+                    Editar <LuEdit />
+                  </button>
                 </div>
               </div>
               <div className="row">
@@ -62,7 +72,10 @@ export const UserHeader = ({ closeModal, EmployeData, index}) => {
                   <MdPerson2 /> {EmployeData.datosLaborales.cargo}
                 </h5>
                 <h5 className="col-12 mb-2">
-                  <MdLocationPin /> {EmployeData.datosResidencia.distrito + ", " + EmployeData.datosResidencia.departamento}
+                  <MdLocationPin />{" "}
+                  {EmployeData.datosResidencia.distrito +
+                    ", " +
+                    EmployeData.datosResidencia.departamento}
                 </h5>
                 <h5 className="col-12 mb-2">
                   <MdAlternateEmail /> {EmployeData.datosContacto.correoEmpresa}
