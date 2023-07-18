@@ -1,6 +1,6 @@
 function FormContactInformation() {
   return (
-    <div className="row mt-3 ">
+    <div className="row mx-3 mt-3 ">
       <h5 className="text-start my-3">Datos de Contacto</h5>
       <div className="col-lg-6">
         <label className="form-label">Correo Personal:</label>

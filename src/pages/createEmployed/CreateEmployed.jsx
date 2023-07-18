@@ -1,9 +1,12 @@
 import { useState } from "react";
-import { FormDataEmpl } from "./FormDataEmpl";
-import { FormDataPerson } from "./FormDataPerson";
-import FormPerfil from "./FormPerfil";
-import { FormDataOtros } from "./FormDataOtros";
-import { FormContact } from "./FormContact";
+import FormPerfil from "./components/dataEmplPerfil/FormPerfil";
+import { FormAddressData } from "./components/dataEmplBirthAddress/FormAddressData";
+import { FormBirthData } from "./components/dataEmplBirthAddress/FormBirthData";
+import FormContactInformation from "./components/dataEmplContact/FormContactInformation";
+import FormWorkerData from "./components/dataEmplLabo/FormWorkerData";
+import FormWorkersPension from "./components/dataEmplLabo/FormWorkersPension";
+import FormOrganizationalData from "./components/dataEmplLabo/FormOrganizationalData";
+import FormOtrosDatos from "./components/dataEmplOtros/FormOtrosDatos";
 
 function CreateEmployed() {
   const [activeButton, setActiveButton] = useState(1);
@@ -44,10 +47,33 @@ function CreateEmployed() {
         </div>
         <div className="row mx-0">
           <div className="col-12 mx-0 px-0">
-            {activeButton === 1 && <FormDataPerson />}
-            {activeButton === 2 && <FormContact />}
-            {activeButton === 3 && <FormDataEmpl />}
-            {activeButton === 4 && <FormDataOtros />}
+            <div className="container-fluid border rounded bg-light p-0">
+              <div className="col-md-12 col-lg-12 ">
+                {activeButton === 1 && (
+                  <>
+                    <FormBirthData />
+                    <FormAddressData />
+                  </>
+                )}
+                {activeButton === 2 && (
+                  <>
+                    <FormContactInformation />
+                  </>
+                )}
+                {activeButton === 3 && (
+                  <>
+                    <FormWorkerData />
+                    <FormWorkersPension />
+                    <FormOrganizationalData />
+                  </>
+                )}
+                {activeButton === 4 && (
+                  <>
+                    <FormOtrosDatos />
+                  </>
+                )}
+              </div>
+            </div>
           </div>
         </div>
       </div>
