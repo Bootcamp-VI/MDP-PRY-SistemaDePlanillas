@@ -34,7 +34,7 @@ function Dashboard() {
 
       </div>
       <LatestRecords />
-      <button
+      {/* <button
                     type="button"
                     className="btn btn-info btn-sm m-1"
                     data-bs-toggle="modal"
@@ -51,7 +51,7 @@ function Dashboard() {
                         <ViewUser />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
     </div>
     
   );

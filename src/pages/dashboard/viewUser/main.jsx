@@ -1,9 +1,18 @@
 import { Modal } from "./Modal";
 
-export const ViewUser = () => {
+export const ViewUser = ({closeModal} ) => {
   return (
     <>
-      <Modal />
+    <div className="modal fade show" style={{ display: "block" }}>
+        <div className="modal-dialog" style={{ maxWidth: "980px" }}>
+          <div className="modal-content" style={{ backgroundColor: "#F1F1F1" }}>
+            <div className="modal-body">
+              <Modal  closeModal = {closeModal}/>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </>
   );
 };

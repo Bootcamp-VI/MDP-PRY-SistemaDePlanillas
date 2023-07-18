@@ -4,7 +4,7 @@ import { UserContent } from "./UserContent";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export const Modal = () => {
+export const Modal = ( {closeModal}) => {
   const [EmployeData, setEmployeData] = useState([]);
   useEffect (()=>{
     setEmployeData(EmployeList.data);
@@ -18,7 +18,7 @@ export const Modal = () => {
       <div className="row m-3">
         {
           EmployeList.data.map((EmployeData,index
-            )=>(<UserHeader key = {EmployeData.id} EmployeData ={EmployeData} index={index} />)
+            )=>(<UserHeader  closeModal={ closeModal } key = {EmployeData.id} EmployeData ={EmployeData} index={index} />)
           
         )
         }

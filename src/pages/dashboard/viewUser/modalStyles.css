@@ -1,0 +1,36 @@
+.custom-title {
+  color: #009EF7;
+  font-size: 1.5rem;
+  margin: 5px 0px 5px 10px;
+}
+
+/*BOTONES DEL  MODAL*/
+.button-container {
+  background-color: #d9d9d9;
+}
+
+.button {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  flex:auto;
+  padding: 5px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  margin-bottom: 0;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: none;
+}
+
+.button.active {
+  background-color: white;
+  color: #009EF7;
+}
+
+.button:not(.active) {
+  background-color: #d9d9d9;
+  color: white;
+}

@@ -10,7 +10,7 @@ function TdDropdownBtn({ buttonName, actions, onSelectAction }) {
         <ul className="dropdown-menu bg-secondary btn-dark-important">
           {actions.map((action, index) => (
             <li key={index}>
-              <a className="dropdown-item btn-dark-important" href="#" onClick={() => onSelectAction(action)}>
+              <a className="dropdown-item btn-dark-important" href="#" onClick={() => onSelectAction(action.action)}>
                 {action.label}
               </a>
             </li>
@@ -28,3 +28,7 @@ TdDropdownBtn.propTypes = {
 }
 
 export default TdDropdownBtn
+
+
+
+

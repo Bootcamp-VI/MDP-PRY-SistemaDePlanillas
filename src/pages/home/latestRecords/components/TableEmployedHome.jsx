@@ -7,8 +7,15 @@ import TdState from "./tableComponents/TdState";
 import TdDropdownBtn from "./tableComponents/TdDropdownBtn";
 import TableHeaderRow from "./tableComponents/TableHeaderRow";
 import { EmployeList } from "../../../../components/data/EmployedList";
+import { ViewUser } from "../../../dashboard/viewUser/main";
 
 function TableEmployedHome() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const closeModal = () => {
+    setOpenModal(false);
+  };
+
   const columnNames = ["Código", "Empleado", "Documento", "Sueldo", "Planilla", "Estado", "Acción"];
   const actions = [
     { label: "Ver", action: "view" },
@@ -17,9 +24,8 @@ function TableEmployedHome() {
   ];
 
   const handleActionSelect = (action) => {
-    // Realiza la acción correspondiente según la opción seleccionada
     if (action === "view") {
-      
+      setOpenModal(true);
     } else if (action === "edit") {
       // Acción para editar
     } else if (action === "delete") {
@@ -76,35 +82,35 @@ function TableEmployedHome() {
             ))}
           </tbody>
         </table>
-
+        {openModal && <ViewUser closeModal={closeModal} />}
       </div>
 
       <div className="mx-3 row my-3">
-          <div className="col-8">
-            <span className="text-body-tertiary px-3">
-              Mostrando {currentItems.length} registros de {EmployeList.length}
-            </span>
-          </div>
-          <div className="col-md-4 col-sm-7">
-            <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn  btn-border mx-1">
-              <i className="fa-solid fa-chevron-left"></i>
-            </button>
-            {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
-              <button
-                key={page}
-                onClick={() => goToPage(page)}
-                disabled={currentPage === page}
-                type="button"
-                className="btn btn-primary btn-dark-important btn-border mx-1"
-              >
-                {page}
-              </button>
-            ))}
-            <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn  btn-border mx-1">
-              <i className="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+        <div className="col-8">
+          <span className="text-body-tertiary px-3">
+            Mostrando {currentItems.length} registros de {EmployeList.length}
+          </span>
         </div>
+        <div className="col-md-4 col-sm-7">
+          <button onClick={prevPage} disabled={currentPage === 1} type="button" className="btn  btn-border mx-1">
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => (
+            <button
+              key={page}
+              onClick={() => goToPage(page)}
+              disabled={currentPage === page}
+              type="button"
+              className="btn btn-primary btn-dark-important btn-border mx-1"
+            >
+              {page}
+            </button>
+          ))}
+          <button onClick={nextPage} disabled={currentPage === totalPages} type="button" className="btn  btn-border mx-1">
+            <i className="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

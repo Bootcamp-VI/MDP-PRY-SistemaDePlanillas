@@ -10,10 +10,10 @@ import { LuEdit } from "react-icons/lu";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export const UserHeader = ( EmployeData, index) => {
+export const UserHeader = ({ closeModal, EmployeData, index}) => {
 
 
-  console.log("x2",EmployeData.EmployeData);
+  console.log("x2",EmployeData);
   return (
     <>
       <div className="p-0">
@@ -33,6 +33,7 @@ export const UserHeader = ( EmployeData, index) => {
               className="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
+              onClick={ closeModal }
             ></button>
           </div>
         </div>
@@ -42,32 +43,32 @@ export const UserHeader = ( EmployeData, index) => {
               <div className="text-center">
                 <img
                   src={user_data.foto}
-                  className="img-fluid"
+                  className="img-fluid rounded-4"
                   alt="Foto de perfil"
                 />
               </div>
-              <h5 className="m-0 text-center">DNI:{EmployeData.EmployeData.documento}</h5>
+              <h5 className="m-0 text-center">DNI:{EmployeData.documento}</h5>
             </div>
             <div className="col-md-8 col-12">
               <div className=" row d-flex align-items-center ">
-                <h3 className="col-md-7 col-10">{EmployeData.EmployeData.nombre + " " + EmployeData.EmployeData.apellidoPaterno + " " + EmployeData.EmployeData.apellidoMaterno}</h3>
-                <h3 className="col-md-2 col-2">{EmployeData.EmployeData.pais}</h3>
+                <h3 className="col-md-7 col-10">{EmployeData.nombre + " " + EmployeData.apellidoPaterno + " " + EmployeData.apellidoMaterno}</h3>
+                <h3 className="col-md-2 col-2">{EmployeData.pais}</h3>
                 <div className="col-md-3 col-12 d-none d-md-block">
                   <button className="btn btn-secondary  ">Editar <LuEdit/></button>
                 </div>
               </div>
               <div className="row">
                 <h5 className="col-12 mb-2">
-                  <MdPerson2 /> {EmployeData.EmployeData.datosLaborales.cargo}
+                  <MdPerson2 /> {EmployeData.datosLaborales.cargo}
                 </h5>
                 <h5 className="col-12 mb-2">
-                  <MdLocationPin /> {EmployeData.EmployeData.datosResidencia.distrito + ", " + EmployeData.EmployeData.datosResidencia.departamento}
+                  <MdLocationPin /> {EmployeData.datosResidencia.distrito + ", " + EmployeData.datosResidencia.departamento}
                 </h5>
                 <h5 className="col-12 mb-2">
-                  <MdAlternateEmail /> {EmployeData.EmployeData.datosContacto.correoEmpresa}
+                  <MdAlternateEmail /> {EmployeData.datosContacto.correoEmpresa}
                 </h5>
                 <h5 className="col-12 mb-0">
-                  <MdLocalPhone /> {EmployeData.EmployeData.datosContacto.celular}
+                  <MdLocalPhone /> {EmployeData.datosContacto.celular}
                 </h5>
               </div>
             </div>
