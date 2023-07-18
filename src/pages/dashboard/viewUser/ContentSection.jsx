@@ -26,17 +26,17 @@ export const ContentSection = ({ sectionName, EmployeData }, index) => {
   ]
   return (
     <>
-      <div className="col-12 col-md-6 px-1">
+      <div className="col-12 col-md-12 px-1">
         <SectionCard objetos={docIdentidad} tittle = {'Datos de identidad'}>
         </SectionCard>
       </div>
-      <div className="col-12 col-md-6 px-1">
+      <div className="col-12 col-md-12 px-1">
 
         <SectionCard objetos={datosContacto} tittle = {'Datos de contacto'}>
 
         </SectionCard>
       </div>
-      <div className="col-12 col-md-6 px-1" >
+      <div className="col-12 col-md-12 px-1" >
 
         <SectionCard objetos={otros} tittle = {'Otros datos'}>
 

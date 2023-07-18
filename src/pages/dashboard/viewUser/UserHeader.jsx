@@ -62,8 +62,8 @@ export const UserHeader = ({ closeModal, EmployeData, index }) => {
                 ></img>
                 {/* <h3 className="col-md-2 col-2">{EmployeData.pais}</h3> */}
                 <div className="col-md-3 col-12 d-none d-md-block">
-                  <button className="btn btn-secondary  ">
-                    Editar <LuEdit />
+                  <button className="btn btn-secondary">
+                    <span className="fs-sm-5 fs-6"> Editar <LuEdit /></span>
                   </button>
                 </div>
               </div>
