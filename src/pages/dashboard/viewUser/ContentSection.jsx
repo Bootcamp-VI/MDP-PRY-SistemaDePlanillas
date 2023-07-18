@@ -1,10 +1,16 @@
 import { SectionCard } from "./SectionCard";
+import { RiPassValidFill } from 'react-icons/ri';
+import { FaAddressBook, FaUserAlt } from 'react-icons/fa';
 
 export const ContentSection = ({ sectionName, EmployeData }, index) => {
   console.log("x4", EmployeData);
 
-  const tittle1 = 'Datos del empleo';
-
+  const titleIcons = {
+    'Datos de identidad': <RiPassValidFill />,
+    'Datos de contacto': <FaAddressBook />,
+    'Otros datos': <FaUserAlt />,
+  };
+  
 
   const docIdentidad = [
     { nombre: 'Tipo de documento', valor: EmployeData?.tipoDocumento },
@@ -27,18 +33,18 @@ export const ContentSection = ({ sectionName, EmployeData }, index) => {
   return (
     <>
       <div className="col-12 col-md-6 px-1">
-        <SectionCard objetos={docIdentidad} tittle = {'Datos de identidad'}>
+        <SectionCard objetos={docIdentidad} tittle = {'Datos de identidad'} icon={titleIcons['Datos de identidad']} >
         </SectionCard>
       </div>
       <div className="col-12 col-md-6 px-1">
 
-        <SectionCard objetos={datosContacto} tittle = {'Datos de contacto'}>
+        <SectionCard objetos={datosContacto} tittle = {'Datos de contacto'}  icon={titleIcons['Datos de contacto']} >
 
         </SectionCard>
       </div>
       <div className="col-12 col-md-6 px-1" >
 
-        <SectionCard objetos={otros} tittle = {'Otros datos'}>
+        <SectionCard objetos={otros} tittle = {'Otros datos'} icon={titleIcons['Otros datos']}> 
 
         </SectionCard>
       </div>

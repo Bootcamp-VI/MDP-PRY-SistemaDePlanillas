@@ -1,8 +1,16 @@
 import { SectionCard } from "./SectionCard";
+import { RiBuilding4Fill, RiMoneyDollarCircleFill, RiTimeFill } from 'react-icons/ri';
+
 
 function WizarEmpleado({ sectionName, EmployeData }, index) {
   console.log("x8", EmployeData);
  
+  const titleIcons = {
+    'Datos del empleo': <RiBuilding4Fill />,
+    'Datos Salariales': <RiMoneyDollarCircleFill />,
+    'Horario': <RiTimeFill />,
+  };
+
   const datosEmpleo = [
     { nombre: 'Fecha de ingreso', valor: EmployeData.datosLaborales.fechaIngreso },
     { nombre: 'Codigo de empleado', valor: EmployeData.codigoEmpleado },
@@ -29,18 +37,18 @@ function WizarEmpleado({ sectionName, EmployeData }, index) {
   return (
     <>
       <div className="col-12 col-md-6 px-1">
-        <SectionCard objetos={datosEmpleo} tittle = {'Datos del empleo'}>
+        <SectionCard objetos={datosEmpleo} tittle = {'Datos del empleo'} icon={titleIcons['Datos del empleo']}>
         </SectionCard>
       </div>
       <div className="col-12 col-md-6 px-1">
 
-        <SectionCard objetos={datosSalariales} tittle = {'Datos Salariales'}>
+        <SectionCard objetos={datosSalariales} tittle = {'Datos Salariales'} icon={titleIcons['Datos Salariales']}>
 
         </SectionCard>
       </div>
       <div className="col-12 col-md-6 px-1">
 
-        <SectionCard objetos={datosHorario} tittle = {'Horario'}>
+        <SectionCard objetos={datosHorario} tittle = {'Horario'} icon={titleIcons['Horario']}>
 
         </SectionCard>
       </div>
