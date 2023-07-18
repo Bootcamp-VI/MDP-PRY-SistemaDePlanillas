@@ -15,7 +15,7 @@ export const Modal = ( {closeModal}) => {
     <>
     {
     EmployeData?
-      <div className="row m-3">
+      <div className="row m-0 m-sm-3">
         {
           EmployeList.data.map((EmployeData,index
             )=>(<UserHeader  closeModal={ closeModal } key = {EmployeData.id} EmployeData ={EmployeData} index={index} />)
