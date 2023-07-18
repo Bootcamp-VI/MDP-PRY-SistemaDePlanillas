@@ -8,7 +8,7 @@ import FormWorkersPension from "./components/dataEmplLabo/FormWorkersPension";
 import FormOrganizationalData from "./components/dataEmplLabo/FormOrganizationalData";
 import FormOtrosDatos from "./components/dataEmplOtros/FormOtrosDatos";
 
-function CreateEmployed() {
+function CreateEmployee() {
   const [activeButton, setActiveButton] = useState(1);
 
   const handleButtonClick = (buttonNumber) => {
@@ -81,4 +81,4 @@ function CreateEmployed() {
   );
 }
 
-export default CreateEmployed;
+export default CreateEmployee;
