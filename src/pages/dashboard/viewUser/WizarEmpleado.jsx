@@ -28,21 +28,25 @@ function WizarEmpleado({ sectionName, EmployeData }, index) {
   ]
   return (
     <>
-      <div className="col-12 col-md-12 px-1">
+      <div className="col-12 col-md-6 px-1">
         <SectionCard objetos={datosEmpleo} tittle = {'Datos del empleo'}>
         </SectionCard>
       </div>
-      <div className="col-12 col-md-12 px-1">
+      <div className="col-12 col-md-6 px-1">
 
         <SectionCard objetos={datosSalariales} tittle = {'Datos Salariales'}>
 
         </SectionCard>
       </div>
-      <div className="col-12 col-md-12 px-1">
 
-        <SectionCard objetos={datosHorario} tittle = {'Horario'}>
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+          <div className="col-12 col-md-7 px-1">
+          <SectionCard objetos={datosHorario} tittle = {'Horario'}>
 
-        </SectionCard>
+          </SectionCard>
+          </div>
+        </div>
       </div>
 
     </>

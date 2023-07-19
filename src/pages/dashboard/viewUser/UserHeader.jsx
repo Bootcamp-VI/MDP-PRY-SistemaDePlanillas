@@ -35,52 +35,56 @@ export const UserHeader = ({ closeModal, EmployeData, index }) => {
           </div>
         </div>
         <div className="card py-3 rounded-5">
-          <div className="row">
-            <div className="col-md-4 col-12">
-              <div className="text-center">
+          <div className="d-sm-block d-md-flex text-center">
+            <div>
+              <div>
                 <img
                   src={user_data.foto}
                   className="img-fluid rounded-4 w-50"
                   alt="Foto de perfil"
                 />
               </div>
-             {/*  <h5 className="m-0 text-center mt-2 fs-5">DNI:{EmployeData.documento}</h5> */}
+              <h5 className="m-0 text-center mt-2 fs-5">
+                DNI:{EmployeData.documento}
+              </h5>
             </div>
-            <div className="col-md-8 col-12 mx-5 mx-sm-0">
-              <div className=" row d-flex align-items-center ">
-                <h3 className="fs-4 col-md-7 col-10 fw-bold text-center mt-3">
-                  {EmployeData.nombre +
-                    " " +
-                    EmployeData.apellidoPaterno +
-                    " " +
-                    EmployeData.apellidoMaterno}
-                </h3>
-                <img
-                  className="col-md-2 col-2"
-                  src={`https://flagsapi.com/${EmployeData.codigoPais}/flat/64.png`}
-                  style={{ width: "60px" }}
-                ></img>
+            <div className="flex-grow-1">
+              <div className="d-md-flex justify-content-between align-items-center">
+                <div className="d-md-flex gap-3 align-items-center">
+                  <h3 className="">
+                    {EmployeData.nombre +
+                      " " +
+                      EmployeData.apellidoPaterno +
+                      " " +
+                      EmployeData.apellidoMaterno}
+                  </h3>
+                  <img
+                    className=""
+                    src={`https://flagsapi.com/${EmployeData.codigoPais}/flat/64.png`}
+                    style={{ width: "60px" }}
+                  ></img>
+                </div>
                 {/* <h3 className="col-md-2 col-2">{EmployeData.pais}</h3> */}
-                <div className="col-md-3 col-12 d-none d-md-block">
+                <div className="d-none d-md-block me-2">
                   <button className="btn btn-secondary">
-                    <span className="fs-sm-5 fs-6"> Editar <LuEdit /></span>
+                    Editar <LuEdit />
                   </button>
                 </div>
               </div>
-              <div className="row">
-                <h5 className="col-12 mb-2">
+              <div className="text-md-start">
+                <h5 className="">
                   <MdPerson2 /> {EmployeData.datosLaborales.cargo}
                 </h5>
-                <h5 className="col-12 mb-2">
+                <h5 className="">
                   <MdLocationPin />{" "}
                   {EmployeData.datosResidencia.distrito +
                     ", " +
                     EmployeData.datosResidencia.departamento}
                 </h5>
-                <h5 className="col-12 mb-2">
+                <h5 className="">
                   <MdAlternateEmail /> {EmployeData.datosContacto.correoEmpresa}
                 </h5>
-                <h5 className="col-12 mb-0">
+                <h5 className="">
                   <MdLocalPhone /> {EmployeData.datosContacto.celular}
                 </h5>
               </div>
