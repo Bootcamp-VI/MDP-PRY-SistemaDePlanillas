@@ -14,6 +14,19 @@ const FilterEmployee = () => {
     setSelectedRxh(event.target.value);
   };
 
+  const handleSearchPlaceholder = () => {
+    if (selectedDocument === "DNI") {
+      return "Buscar por DNI";
+    } else if (selectedDocument === "Pasporte") {
+      return "Buscar por Pasaporte";
+    } else if(selectedDocument === "CE"){
+      return "Buscar por Carné de Extranjería";
+    } else {
+      return "Buscar por...";
+    }
+  };
+
+
   return (
     <div className="container border rounded my-2 d-flex flex-column">
       <h3 className="my-2">Conceptos por Empleado</h3>
@@ -21,18 +34,18 @@ const FilterEmployee = () => {
       {/* First Row */}
       <div className="row my-2 justify-content-between">
         <div className="col-lg-4 col-md-8 col-sm-6 col-12">
-            <div className="input-group">
-                <input
-                    type="text"
-                    className="form-control form-control-sm p-2 my-2"
-                    placeholder="Buscar por..."
-                    value={employeeName}
-                    onChange={(e) => setEmployeeName(e.target.value)}
-                />
-                <button className="btn btn-outline-secondary p-2 my-2" type="button">
-                    <i className="fa-solid fa-magnifying-glass"></i>
-                </button>
-            </div>
+          <div className="input-group">
+            <input
+              type="text"
+              className="form-control form-control-sm p-2 my-2"
+              placeholder={handleSearchPlaceholder()}
+              value={employeeName}
+              onChange={(e) => setEmployeeName(e.target.value)}
+            />
+            <button className="btn btn-outline-secondary p-2 my-2" type="button">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
         </div>
         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
           <select
@@ -72,7 +85,7 @@ const FilterEmployee = () => {
         </div>
         <div className="col-md-4 text-center col-sm-6 text-sm-end">
           <button className="btn btn-primary my-2">
-            <MdAddCircleOutline className="me-2"/>
+            <MdAddCircleOutline className="me-2" />
             Agregar
           </button>
         </div>
