@@ -56,17 +56,17 @@ function Sidebar({ toggled, handleToggleSidebar }) {
             Inicio
           </MenuItem>
           <SubMenu label="Empleados" icon={<FaBuildingUser size={25} />}>
-            <MenuItem component={<Link to="/base/create_employed" />}>
+            <MenuItem component={<Link to="/base/create_employee" />}>
               {" "}
               ° Crear Empleado{" "}
             </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}>
+            <MenuItem component={<Link to="/base/concepts" />}>
               {" "}
-              ° Comprobantes{" "}
+              ° Conceptos{" "}
             </MenuItem>
-            <MenuItem component={<Link to="/documentation" />}>
+            <MenuItem component={<Link to="/base/bank_accounts" />}>
               {" "}
-              ° Quinta{" "}
+              ° Cuentas Bancarias{" "}
             </MenuItem>
             <MenuItem component={<Link to="/documentation" />}>
               {" "}

@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { MdAddCircleOutline } from "react-icons/md";
+import PropTypes from "prop-types";
 
-const FilterEmployee = () => {
+const FilterEmployee = ( props ) => {
+  const title = props.title;
+  const EmployeeName = props.EmployeeName;
   const [selectedDocument, setSelectedDocument] = useState("");
   const [selectedRxh, setSelectedRxh] = useState("");
   const [employeeName, setEmployeeName] = useState("");
@@ -29,7 +32,7 @@ const FilterEmployee = () => {
 
   return (
     <div className="container border rounded my-2 d-flex flex-column">
-      <h3 className="my-2">Conceptos por Empleado</h3>
+      <h3 className="my-2">{title}</h3>
 
       {/* First Row */}
       <div className="row my-2 justify-content-between">
@@ -81,7 +84,7 @@ const FilterEmployee = () => {
 
         <div className="col-md-4 d-flex align-items-center my-2 col-sm-6">
           <label htmlFor="employeeInput" className="me-2"><b>Empleado:</b></label>
-          <label htmlFor="employeeInput" className="me-2 text-muted">Sanchez Marin</label>
+          <label htmlFor="employeeInput" className="me-2 text-muted">{EmployeeName}</label>
         </div>
         <div className="col-md-4 text-center col-sm-6 text-sm-end">
           <button className="btn btn-primary my-2">
@@ -94,5 +97,10 @@ const FilterEmployee = () => {
     </div>
   );
 };
+
+FilterEmployee.propTypes = {
+  title: PropTypes.string.isRequired,
+  EmployeeName: PropTypes.string.isRequired,
+}
 
 export default FilterEmployee;
