@@ -1,7 +1,11 @@
-import { FilterEmployee } from "../../components/filter/FilterEmployee"
+import FilterEmployee from "../../components/filter/FilterEmployee"
 
-export const Concepts = ()=>{
-    return (<>
-        <FilterEmployee></FilterEmployee>
-    </>)
+function Concepts() {
+    return (
+        <>
+            <FilterEmployee title={"Conceptos por Empleado"} EmployeeName={"Emerson Medina"}></FilterEmployee>
+        </>
+    )
 }
+
+export default Concepts
