@@ -1,10 +1,15 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function TdDropdownBtn({ buttonName, actions, onSelectAction }) {
   return (
     <td>
       <div className="dropdown">
-        <button className="btn btn-sm btn-dark btn-dark-important dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button
+          className="btn btn-sm btn-dark btn-dark-important dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
           {buttonName}
         </button>
         <ul className="dropdown-menu bg-secondary btn-dark-important">
@@ -18,17 +23,13 @@ function TdDropdownBtn({ buttonName, actions, onSelectAction }) {
         </ul>
       </div>
     </td>
-  )
+  );
 }
 
 TdDropdownBtn.propTypes = {
   buttonName: PropTypes.string.isRequired,
   actions: PropTypes.array.isRequired,
   onSelectAction: PropTypes.func.isRequired,
-}
+};
 
-export default TdDropdownBtn
-
-
-
-
+export default TdDropdownBtn;

@@ -1,13 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./LatestRecords.css";
 import FiltersHome from "./components/filtersHome";
-import TableEmployedHome from "./components/TableEmployedHome";
+import TableEmployeeHome from "../latestRecords/components/TableEmployedHome";
 function LatestRecords() {
   return (
     <>
       <div className="container-fluid px-0 border rounded bg-white">
         <FiltersHome />
-        <TableEmployedHome/>
+        <TableEmployeeHome />
       </div>
     </>
   );

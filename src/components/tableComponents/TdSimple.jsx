@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function TdSimple(props) {
   const text = props.text;
@@ -11,7 +11,6 @@ function TdSimple(props) {
 
 TdSimple.propTypes = {
   text: PropTypes.string.isRequired,
-}
-
+};
 
 export default TdSimple;

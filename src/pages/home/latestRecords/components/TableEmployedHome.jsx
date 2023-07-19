@@ -5,9 +5,9 @@ import TdDouble from "../../../../components/tableComponents/TdDouble";
 import TdImageText from "../../../../components/tableComponents/TdImageText";
 import TdState from "../../../../components/tableComponents/TdState";
 import TdDropdownBtn from "../../../../components/tableComponents/TdDropdownBtn";
-import TableHeaderRow from "../../../../components/tableComponents/TableHeaderRow";
 import { EmployeList } from "../../../../components/data/EmployedList";
 import { ViewUser } from "../../../dashboard/viewUser/main";
+import TheadRow from "../../../../components/tableComponents/TheaderRow";
 
 function TableEmployedHome() {
   const [openModal, setOpenModal] = useState(false);
@@ -62,7 +62,7 @@ function TableEmployedHome() {
     <div>
       <div className="table-responsive mx-3">
         <table className="table">
-          <TableHeaderRow columnNames={columnNames} />
+          <TheadRow columnNames={columnNames} />
           <tbody>
             {currentItems.map((registro, index) => (
               <tr key={index}>
