@@ -3,7 +3,7 @@ import FilterEmployee from "../../components/filter/FilterEmployee"
 function Concepts() {
     return (
         <>
-            <FilterEmployee title={"Conceptos por Empleado"}></FilterEmployee>
+            <FilterEmployee title={"Conceptos por Empleado"} EmployeeName={"Emerson Medina"}></FilterEmployee>
         </>
     )
 }
