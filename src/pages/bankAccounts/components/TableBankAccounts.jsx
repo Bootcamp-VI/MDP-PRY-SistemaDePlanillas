@@ -1,9 +1,9 @@
 import { useState } from "react";
-import TdSimple from "../../components/tableComponents/TdSimple";
-import { BankAccountList, getKeyArray } from "../../components/data/BankAccountList";
-import TheadRow from "../../components/tableComponents/TheaderRow";
-import TdStateCheck from "../../components/tableComponents/TdStateCheck";
-import Pagination from "../../components/tableComponents/Pagination";
+import TdSimple from "../../../components/tableComponents/TdSimple";
+import { BankAccountList, getKeyArray } from "../../../components/data/BankAccountList";
+import TheadRow from "../../../components/tableComponents/TheaderRow";
+import TdStateCheck from "../../../components/tableComponents/TdStateCheck";
+import Pagination from "../../../components/tableComponents/Pagination";
 
 function TableBankAccounts() {
   const columnNames = getKeyArray(BankAccountList);
