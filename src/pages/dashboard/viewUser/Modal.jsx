@@ -9,7 +9,6 @@ export const Modal = ({ closeModal }) => {
   useEffect(() => {
     setEmployeData(EmployeList.data);
   }, []);
-  console.log("Aaca", EmployeList.data);
   return (
     <>
       {EmployeData ? (

@@ -1,7 +1,6 @@
 import "./modalStyles.css";
 
 export const SectionCard = ({ objetos, tittle, icon }) => {
-  console.log("x8", tittle);
   return (
     <>
       <h5 className="custom-title d-flex align-items-center">

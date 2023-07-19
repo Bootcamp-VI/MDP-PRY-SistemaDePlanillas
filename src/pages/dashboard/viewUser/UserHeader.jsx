@@ -10,7 +10,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export const UserHeader = ({ closeModal, EmployeData, index }) => {
-  console.log("x2", EmployeData);
   return (
     <>
       <div className="container border-1 rounded-3 bg-white p-3">

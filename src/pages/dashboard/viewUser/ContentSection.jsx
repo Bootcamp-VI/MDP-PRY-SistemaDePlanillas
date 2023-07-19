@@ -3,7 +3,6 @@ import { RiPassValidFill } from 'react-icons/ri';
 import { FaAddressBook, FaUserAlt } from 'react-icons/fa';
 
 export const ContentSection = ({ sectionName, EmployeData }, index) => {
-  console.log("x4", EmployeData);
 
   const titleIcons = {
     'Datos de identidad': <RiPassValidFill />,

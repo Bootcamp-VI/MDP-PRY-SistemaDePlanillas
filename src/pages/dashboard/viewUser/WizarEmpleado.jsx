@@ -2,7 +2,6 @@ import { SectionCard } from "./SectionCard";
 import { RiBuilding4Fill, RiMoneyDollarCircleFill, RiTimeFill } from "react-icons/ri";
 
 function WizarEmpleado({ sectionName, EmployeData }, index) {
-  console.log("x8", EmployeData);
 
   const titleIcons = {
     "Datos del empleo": <RiBuilding4Fill />,

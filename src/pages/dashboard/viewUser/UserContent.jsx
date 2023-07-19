@@ -5,7 +5,6 @@ import { FaUser, FaBriefcase } from "react-icons/fa";
 import "./modalStyles.css";
 
 export const UserContent = (EmployeData, index) => {
-  console.log("x3", EmployeData);
   let sectionName = ["Section 1", "Section 2"];
   const [activeButton, setActiveButton] = useState(1);
 
