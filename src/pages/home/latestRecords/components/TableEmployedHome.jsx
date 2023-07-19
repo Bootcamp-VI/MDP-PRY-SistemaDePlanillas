@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import TdSimple from "./tableComponents/TdSimple";
-import TdDouble from "./tableComponents/TdDouble";
-import TdImageText from "./tableComponents/TdImageText";
-import TdState from "./tableComponents/TdState";
-import TdDropdownBtn from "./tableComponents/TdDropdownBtn";
-import TableHeaderRow from "./tableComponents/TableHeaderRow";
+import TdSimple from "../../../../components/tableComponents/TdSimple";
+import TdDouble from "../../../../components/tableComponents/TdDouble";
+import TdImageText from "../../../../components/tableComponents/TdImageText";
+import TdState from "../../../../components/tableComponents/TdState";
+import TdDropdownBtn from "../../../../components/tableComponents/TdDropdownBtn";
+import TableHeaderRow from "../../../../components/tableComponents/TableHeaderRow";
 import { EmployeList } from "../../../../components/data/EmployedList";
 import { ViewUser } from "../../../dashboard/viewUser/main";
 
