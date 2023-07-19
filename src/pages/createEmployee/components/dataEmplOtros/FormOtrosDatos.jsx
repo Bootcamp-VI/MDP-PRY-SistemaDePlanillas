@@ -1,9 +1,9 @@
-export const FormDataOtros = () => {
-  return (
-    <>
-      <div className="container-fluid border rounded bg-light p-0">
-        <div className="col-md-12 col-lg-12 ">
-          <div className="row mx-3 mt-3">
+function FormOtrosDatos (){
+
+    return(
+
+        <>
+        <div className="row mx-3 mt-3">
             <h5 className="text-start my-3">Otros Datos</h5>
             <div className="col-lg-6">
               <label className="form-label">Profesión:</label>
@@ -112,8 +112,11 @@ export const FormDataOtros = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </>
-  );
-};
+        
+        
+        
+        </>
+    )
+}
+
+export default FormOtrosDatos
