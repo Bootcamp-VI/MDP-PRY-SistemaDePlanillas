@@ -15,7 +15,7 @@ export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
       </button>
 
       <div
-        class="modal fade"
+        class="modal fade modal-lg"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
