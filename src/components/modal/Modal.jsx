@@ -1,4 +1,4 @@
-import { Buttons } from "./Buttons";
+import { Button } from "./Button";
 import { FirstPart } from "./FirstPart";
 import { SecondPart } from "./SecondPart";
 
@@ -52,7 +52,10 @@ export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
               <button type="button" class="btn btn-primary">
                 Registrar
               </button> */}
-              <Buttons/>
+               
+              <Button btnName={"Cerrar"} icon={"fa-circle-xmark"} color={"light"}/>
+              <Button btnName={"Registrar"} icon={"fa-file-lines"} color={"primary"}/>
+
             </div>
           </div>
         </div>
