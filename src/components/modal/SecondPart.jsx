@@ -13,7 +13,7 @@ console.log(headers2);
 export const SecondPart = ({ headers = headers2 }) => {
   return (
     <>
-      <div className="table-responsive border-top" >
+      <div className="table-responsive border-top " >
         <table className="table table-borderless" >
           <thead>
             <tr className="table-light" style={{ backgroundColor: '#f5f8fa' }}>

@@ -36,10 +36,12 @@ export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body p-0">
                 {/* Aqui van los componentes */}
+                <div className="container">
                 <FirstPart/>
                 <SecondPart/>
+                </div>
             </div>
             <div class="modal-footer text-center d-flex justify-content-center">
               {/* <button

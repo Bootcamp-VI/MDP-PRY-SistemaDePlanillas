@@ -4,7 +4,7 @@ export const FirstPart = () => {
   return (
     <>
     
-    <div className="container-fluid p-2 pb-3" style={{ background: '#f5f8fa' }}>
+    <div className="container-fluid py-3" style={{ background: '#f5f8fa' }}>
         <div className="row">
             <div className="col-md-3">
                 <div className="form-check">
