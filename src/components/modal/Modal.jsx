@@ -1,3 +1,6 @@
+import { FirstPart } from "./FirstPart";
+import { SecondPart } from "./SecondPart";
+
 export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
   return (
     <>
@@ -32,7 +35,11 @@ export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">...</div>
+            <div class="modal-body">
+                {/* Aqui van los componentes */}
+                <FirstPart/>
+                <SecondPart/>
+            </div>
             <div class="modal-footer text-center d-flex justify-content-center">
               <button
                 type="button"

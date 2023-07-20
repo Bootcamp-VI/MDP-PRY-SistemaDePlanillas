@@ -6,6 +6,7 @@ import LatestRecords from "../home/latestRecords/LatestRecords";
 
 import { lastActivities } from "../../components/data/lastActivities";
 import { useEffect, useState } from "react";
+import { Modal } from "../../components/modal/Modal";
 
 function Dashboard() {
   const [activities, setActivities] = useState([]);
@@ -34,6 +35,7 @@ function Dashboard() {
 
       </div>
       <LatestRecords />
+      <Modal/>
       {/* <button
                     type="button"
                     className="btn btn-info btn-sm m-1"
