@@ -13,10 +13,10 @@ console.log(headers2);
 export const SecondPart = ({ headers = headers2 }) => {
   return (
     <>
-      <div className="table-responsive">
-        <table className="table table-borderless">
+      <div className="table-responsive border-top" >
+        <table className="table table-borderless" >
           <thead>
-            <tr className="table-secondary">
+            <tr className="table-light" style={{ backgroundColor: '#f5f8fa' }}>
               {headers.map((header) => (
                 <th scope="col" key={header}>
                   {header}
