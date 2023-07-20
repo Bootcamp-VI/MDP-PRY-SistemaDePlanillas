@@ -1,3 +1,4 @@
+import { Buttons } from "./Buttons";
 import { FirstPart } from "./FirstPart";
 import { SecondPart } from "./SecondPart";
 
@@ -41,7 +42,7 @@ export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
                 <SecondPart/>
             </div>
             <div class="modal-footer text-center d-flex justify-content-center">
-              <button
+              {/* <button
                 type="button"
                 class="btn btn-secondary"
                 data-bs-dismiss="modal"
@@ -50,7 +51,8 @@ export const Modal = ({ modalTitle = "Agregar Cuenta Bancaria" }) => {
               </button>
               <button type="button" class="btn btn-primary">
                 Registrar
-              </button>
+              </button> */}
+              <Buttons/>
             </div>
           </div>
         </div>
